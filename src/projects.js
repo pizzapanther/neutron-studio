@@ -13,25 +13,14 @@ var PROJECTS = [
     environment."
   },
   {
-    title: "Neutron Academy",
-    subtitle: "Learn Out Loud. Study with voice enabled quizzes.",
-    icon: "school",
-    url: "https://www.neutron.academy/",
-    desc: "Neutron Academy is quiz based learning system that\
-    works with voice interactions on Google Assistant and the web. \
-    You can create quizzes, assign them to your class, and track \
-    your students' progress."
+    title: "CanyonLake.app",
+    subtitle: "Your guide to fun in Canyon Lake, Texas",
+    icon: "waves",
+    url: "https://www.canyonlake.app/",
+    desc: "CanyonLake.app collects all the latest lake and river conditions and\
+    area events in one place so you can plan your next fun adventure in the\
+    Canyon Lake, Texas area."
   },
-  // {
-  //   title: "Codacation",
-  //   subtitle: "Git workflow for your coding education",
-  //   icon: "code",
-  //   url: "https://www.codacation.com/",
-  //   github: "https://github.com/pizzapanther/codacation",
-  //   desc: "Codacation is an open source tool to assign and track \
-  //   work via Github and Github Issues. Our goal is to teach coding \
-  //   using tools with used in the technology industry."
-  // },
   {
     title: "Bible Fish",
     subtitle: "The quickest and simplest way to read the Bible on any device.",
