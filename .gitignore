@@ -2,3 +2,6 @@ build/
 deploy.tar
 deploy.tar.gz
 node_modules/
+.parcel-cache/
+.pdm.toml
+__pypackages__/
