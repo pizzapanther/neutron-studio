@@ -5,3 +5,5 @@ node_modules/
 .parcel-cache/
 .pdm.toml
 __pypackages__/
+.jekyll-cache/
+_site/
