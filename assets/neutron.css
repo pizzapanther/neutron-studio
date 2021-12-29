@@ -148,3 +148,11 @@
 .post img {
   max-width: 100%;
 }
+
+.post h2 {
+  margin-bottom: 8px;
+}
+
+.post .excerpt {
+  font-size: 1.1rem;
+}

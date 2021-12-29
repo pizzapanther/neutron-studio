@@ -17,4 +17,12 @@ The easiest way to do audio is to use the mic in your phone or camera and direct
 
 ## Streaming Software
 
-With the explosion of Youtube and personal broadcasting there are now many ways to live stream easily. To keep things easy I recommend software like [Stream Yard](https://streamyard.com/). Stream Yard and Restream let you broadcast directly from most web browsers. This means just about any computer you have can be turned into your new streaming rig.
+With the explosion of Youtube and personal broadcasting there are now many ways to live stream easily. To keep things easy, I recommend software like [Stream Yard](https://streamyard.com/). Stream Yard and Restream let you broadcast directly from most web browsers. This means just about any computer you have can be turned into your new streaming rig. Additionally, you can add more cameras to your stream by joining your broadcast with any video capable device. Lastly, whenever you broadcast you get built in recording to the cloud. So often, even if I'm not broadcasting, I start a stream for recording only.
+
+I like keeping a separate computer for streaming, however, if you have a powerful enough computer and you want to keep costs down you could run this software on your presentation computer. Additionally, if you don't have a "line in" on your sound card for your computer, you can purchase pretty cheap USB sound cards that will give you this capability. Finally, a nice touch is to always make sure your presentation computer is added to the live stream so you can share slides and videos being shown.
+
+Last thing to note when setting up your live stream audio, since you are going through your sound mixer, you should turn off any "echo cancellation" in your streaming software. Often with this setup, it no longer does anything, but additionally, you will get better quality sound with this off. Many times I still keep on "automatic volume adjustment" so I don't have to monitor the stream levels so much. However, if you can monitor your stream audio and turn that off as well, you can bump up your quality a bit too.
+
+## Viewing the Broadcast
+
+You have many options to where you would like to send your broadcast and most of them are free. I personally like to add [Online.Church](https://online.church/) on top of whatever platform I'm using to broadcast. This gives the church a way to switch out broadcast providers if anything ever happens or changes. It also gives you a way to "own" the relationship with your viewers more instead of relying on third parties like Youtube and Facebook who can often block access to your viewers.
