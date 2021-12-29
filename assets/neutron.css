@@ -1,12 +1,20 @@
+.theme--light.v-application {
+  background-color: #f3f3f3 !important;
+}
+
 .font2 {
   font-family: 'VT323', monospace;
+}
+
+.hidden {
+  display: none;
 }
 
 .v-toolbar__content {
   display:  flex;
 }
 
-.v-toolbar__content h2 {
+.v-toolbar__content a {
   flex: 1;
 }
 
@@ -124,4 +132,19 @@
   font-size: 80%;
   word-break: normal;
   line-height: normal;
+}
+
+.v-card.post {
+  max-width: 920px;
+  margin:  10px auto 20px auto;
+  background-color: #fff;
+}
+
+.post .v-card__text {
+  font-size: 1.2rem;
+}
+
+
+.post img {
+  max-width: 100%;
 }
