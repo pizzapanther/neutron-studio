@@ -68,11 +68,19 @@ title: Home
   </div>
 </div>
 <div class="contact">
-  <div id="contact">
-    <h2>Contact Us</h2>
+  <div>
+    <h2>Contact</h2>
     <p>
       <v-btn fab large color="primary" href="mailto:inquiry@neutron.studio">
         <v-icon>mdi-email</v-icon>
+      </v-btn>
+    </p>
+  </div>
+  <div>
+    <h2>Blog</h2>
+    <p>
+      <v-btn fab large color="primary" href="/blog/">
+        <v-icon>mdi-newspaper-variant-outline</v-icon>
       </v-btn>
     </p>
   </div>
