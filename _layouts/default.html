@@ -8,32 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <style>
-      .font2 {
-        font-family: 'VT323', monospace;
-      }
-
-      .v-toolbar__content {
-        display:  flex;
-      }
-
-      .v-toolbar__content h2 {
-        flex: 1;
-      }
-
-      .v-toolbar__content h2{
-        font-weight:  400;
-        font-size: 2rem;
-      }
-    </style>
+    <link href="/assets/neutron.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
   </head>
   <body>
     <div id="app">
       <v-app>
         <v-app-bar app dark color="primary">
-          <h2 class="font2">{{ site.title }}</h2>
+          <a href="/"><h2 class="font2">{{ site.title }}</h2></a>
           <div>
-            <v-btn text href="/blog/">Blog</v-btn>
+            <!-- <v-btn text href="/blog/">Blog</v-btn> -->
           </div>
         </v-app-bar>
         <v-main>
