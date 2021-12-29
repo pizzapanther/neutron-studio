@@ -24,7 +24,7 @@ title: Home
         <h4>Sync SSH keys, configuration files, personal settings, etc</h4>
       </v-card-title>
       <v-card-text>
-        CanyonLake.app collects all the latest lake and river conditions and area events in one place so you can plan your next fun adventure in the Canyon Lake, Texas area.
+        Synchronization tool that helps you synchronize your small configuration files. Since these files are often sensitive, everything is encrypted locally before being stored.
       </v-card-text>
       <v-card-actions>
         <v-btn href="https://www.neutronsync.com/" target="_blank" color="primary">
