@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link type="application/atom+xml" rel="alternate" title="RSS Feed" href="https://www.neutron.studio/feed.xml">
+    {%- if page.canonical_url -%}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+    {%- endif -%}
   </head>
   <body>
     <div id="app">
