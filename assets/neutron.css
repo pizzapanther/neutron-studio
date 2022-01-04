@@ -10,6 +10,20 @@
   display: none;
 }
 
+.img-center {
+  margin: 0 auto;
+  display: block;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin: 0 0 10px 0;
+}
+
 .v-toolbar__content {
   display:  flex;
 }
