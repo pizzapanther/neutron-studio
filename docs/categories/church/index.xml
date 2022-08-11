@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>church on Neutron Studio</title>
+    <link>https://www.neutron.studio/categories/church/</link>
+    <description>Recent content in church on Neutron Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Dec 2021 20:00:00 -0600</lastBuildDate><atom:link href="https://www.neutron.studio/categories/church/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Live Streaming Setup for Small/Medium Churches</title>
+      <link>https://www.neutron.studio/posts/2021-12-28-streaming-setup/</link>
+      <pubDate>Tue, 28 Dec 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/posts/2021-12-28-streaming-setup/</guid>
+      <description>With the pandemic live streaming services has become the default for church services. For smaller churches they may think that this tech may be out of reach because of things like cost and expertise. Thus, I&amp;rsquo;ve tried to come up with a cost effective way of live streaming that is easier to maintain. This blog post documents the streaming setup I&amp;rsquo;ve used at Church in the Wildwood.
+Rule 1: Do the Audio Well The first thing you want to do well is your audio.</description>
+      <content>&lt;p&gt;With the pandemic live streaming services has become the default for church services. For smaller churches they may think that this tech may be out of reach because of things like cost and expertise. Thus, I&amp;rsquo;ve tried to come up with a cost effective way of live streaming that is easier to maintain. This blog post documents the streaming setup I&amp;rsquo;ve used at &lt;a href=&#34;https://www.wildwoodag.church/&#34;&gt;Church in the Wildwood&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;rule-1-do-the-audio-well&#34;&gt;Rule 1: Do the Audio Well&lt;/h2&gt;
+&lt;p&gt;The first thing you want to do well is your audio. You can cover many of video sins if you have good audio. People will dismiss a lot of bad video if the audio is good. Also in this distracted age, many people will only be listening to the audio and not paying attention to the video while they do other things.&lt;/p&gt;
+&lt;p&gt;The easiest way to do audio is to use the mic in your phone or camera and directly stream from that device. However, this often produces bad audio unless you can come up with a better more expensive mic setup. However, most churches will already have monitors setup, so you can use an additional monitor output on your mixer board to capture the audio for your live stream. Additionally, this allows you to mix the audio before going into your live stream. Your streaming audio will require different levels than your house mix. This allows you to create a great sounding mix just for your stream. The hard part will be monitoring you levels for both your house and your stream. For music, this can be tricky, however, for preaching you can often set your levels and only check in occasionally because often times streaming software will adjust volume automatically.&lt;/p&gt;
+&lt;h2 id=&#34;streaming-software&#34;&gt;Streaming Software&lt;/h2&gt;
+&lt;p&gt;With the explosion of Youtube and personal broadcasting there are now many ways to live stream easily. To keep things easy, I recommend software like &lt;a href=&#34;https://streamyard.com/&#34;&gt;Stream Yard&lt;/a&gt;. Stream Yard and Restream let you broadcast directly from most web browsers. This means just about any computer you have can be turned into your new streaming rig. Additionally, you can add more cameras to your stream by joining your broadcast with any video capable device. Lastly, whenever you broadcast you get built in recording to the cloud. So often, even if I&amp;rsquo;m not broadcasting, I start a stream for recording only.&lt;/p&gt;
+&lt;p&gt;I like keeping a separate computer for streaming, however, if you have a powerful enough computer and you want to keep costs down you could run this software on your presentation computer. Additionally, if you don&amp;rsquo;t have a &amp;ldquo;line in&amp;rdquo; on your sound card for your computer, you can purchase pretty cheap USB sound cards that will give you this capability. Finally, a nice touch is to always make sure your presentation computer is added to the live stream so you can share slides and videos being shown.&lt;/p&gt;
+&lt;p&gt;Last thing to note when setting up your live stream audio, since you are going through your sound mixer, you should turn off any &amp;ldquo;echo cancellation&amp;rdquo; in your streaming software. Often with this setup, it no longer does anything, but additionally, you will get better quality sound with this off. Many times I still keep on &amp;ldquo;automatic volume adjustment&amp;rdquo; so I don&amp;rsquo;t have to monitor the stream levels so much. However, if you can monitor your stream audio and turn that off as well, you can bump up your quality a bit too.&lt;/p&gt;
+&lt;h2 id=&#34;viewing-the-broadcast&#34;&gt;Viewing the Broadcast&lt;/h2&gt;
+&lt;p&gt;You have many options to where you would like to send your broadcast and most of them are free. I personally like to add &lt;a href=&#34;https://online.church/&#34;&gt;Online.Church&lt;/a&gt; on top of whatever platform I&amp;rsquo;m using to broadcast. This gives the church a way to switch out broadcast providers if anything ever happens or changes. It also gives you a way to &amp;ldquo;own&amp;rdquo; the relationship with your viewers more instead of relying on third parties like Youtube and Facebook who can often block access to your viewers.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

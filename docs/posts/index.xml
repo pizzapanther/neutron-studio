@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Neutron Studio</title>
+    <link>https://www.neutron.studio/posts/</link>
+    <description>Recent content in Posts on Neutron Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 -0600</lastBuildDate><atom:link href="https://www.neutron.studio/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using WeatherKit with Python</title>
+      <link>https://www.neutron.studio/posts/2022-08-09-weatherkit-python/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/posts/2022-08-09-weatherkit-python/</guid>
+      <description>Apple bought out the Dark Sky weather company in 2020. They plan on shutting down the Darky Sky API and replacing it with the new WeatherKit service. The WeatherKit service is now in beta and can be used to retrieve weather forecasts and current conditions.
+The Dark Sky API was extremely easy to use and provided excellent weather data. The WeatherKit API functions much the same as the Dark Sky API, however, the authorization is very different and some what more difficult.</description>
+      <content>&lt;p&gt;Apple bought out the Dark Sky weather company in 2020. They plan on shutting down the Darky Sky API and replacing it with the new WeatherKit service. The WeatherKit service is now in beta and can be used to retrieve weather forecasts and current conditions.&lt;/p&gt;
+&lt;p&gt;The Dark Sky API was extremely easy to use and provided excellent weather data. The WeatherKit API functions much the same as the Dark Sky API, however, the authorization is very different and some what more difficult. You still need to an API token like the previous API. However, now generating the token is more complex. Below is a gist that lays out how to use the API in Python with explanations of some aspects of the usage following.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/pizzapanther/8a29b5462c786f0bb94a257ea535cc0f.js&#34;&gt;&lt;/script&gt;
+&lt;h2 id=&#34;items-needed-to-generate-a-token&#34;&gt;Items Needed to Generate a Token&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;WEATHERKIT_SERVICE_ID:&lt;/strong&gt; &lt;a href=&#34;https://developer.apple.com/account/resources/identifiers/list/serviceId&#34;&gt;Create a service&lt;/a&gt; in your Apple developer account. It should look something like &lt;code&gt;com.example.weatherkit-client&lt;/code&gt; and make sure it ends in &lt;code&gt;.weatherkit-client&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WEATHERKIT_TEAM_ID:&lt;/strong&gt; Go to your &lt;a href=&#34;https://developer.apple.com/account/&#34;&gt;developer account&lt;/a&gt; and get your Team ID.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WEATHERKIT_KID and WEATHERKIT_KEY:&lt;/strong&gt; &lt;a href=&#34;https://developer.apple.com/account/resources/authkeys/list&#34;&gt;Generate a new key&lt;/a&gt; and get the Key ID and contents of the p8 file.&lt;/p&gt;
+&lt;h2 id=&#34;generate-a-jwt&#34;&gt;Generate a JWT&lt;/h2&gt;
+&lt;p&gt;Once you have the required items, you can use them to generate a JSON Web Token using the &lt;code&gt;ES256&lt;/code&gt; algorithm. The expiration used to generate the token can be a large amount of time, however, a short expiration is better in case your token ever got compromised.&lt;/p&gt;
+&lt;h2 id=&#34;using-your-token&#34;&gt;Using Your Token&lt;/h2&gt;
+&lt;p&gt;Once you have a token generated, use it in an authorization header to make requests. The token can be reused until the token expiration has passed.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Live Streaming Setup for Small/Medium Churches</title>
+      <link>https://www.neutron.studio/posts/2021-12-28-streaming-setup/</link>
+      <pubDate>Tue, 28 Dec 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/posts/2021-12-28-streaming-setup/</guid>
+      <description>With the pandemic live streaming services has become the default for church services. For smaller churches they may think that this tech may be out of reach because of things like cost and expertise. Thus, I&amp;rsquo;ve tried to come up with a cost effective way of live streaming that is easier to maintain. This blog post documents the streaming setup I&amp;rsquo;ve used at Church in the Wildwood.
+Rule 1: Do the Audio Well The first thing you want to do well is your audio.</description>
+      <content>&lt;p&gt;With the pandemic live streaming services has become the default for church services. For smaller churches they may think that this tech may be out of reach because of things like cost and expertise. Thus, I&amp;rsquo;ve tried to come up with a cost effective way of live streaming that is easier to maintain. This blog post documents the streaming setup I&amp;rsquo;ve used at &lt;a href=&#34;https://www.wildwoodag.church/&#34;&gt;Church in the Wildwood&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;rule-1-do-the-audio-well&#34;&gt;Rule 1: Do the Audio Well&lt;/h2&gt;
+&lt;p&gt;The first thing you want to do well is your audio. You can cover many of video sins if you have good audio. People will dismiss a lot of bad video if the audio is good. Also in this distracted age, many people will only be listening to the audio and not paying attention to the video while they do other things.&lt;/p&gt;
+&lt;p&gt;The easiest way to do audio is to use the mic in your phone or camera and directly stream from that device. However, this often produces bad audio unless you can come up with a better more expensive mic setup. However, most churches will already have monitors setup, so you can use an additional monitor output on your mixer board to capture the audio for your live stream. Additionally, this allows you to mix the audio before going into your live stream. Your streaming audio will require different levels than your house mix. This allows you to create a great sounding mix just for your stream. The hard part will be monitoring you levels for both your house and your stream. For music, this can be tricky, however, for preaching you can often set your levels and only check in occasionally because often times streaming software will adjust volume automatically.&lt;/p&gt;
+&lt;h2 id=&#34;streaming-software&#34;&gt;Streaming Software&lt;/h2&gt;
+&lt;p&gt;With the explosion of Youtube and personal broadcasting there are now many ways to live stream easily. To keep things easy, I recommend software like &lt;a href=&#34;https://streamyard.com/&#34;&gt;Stream Yard&lt;/a&gt;. Stream Yard and Restream let you broadcast directly from most web browsers. This means just about any computer you have can be turned into your new streaming rig. Additionally, you can add more cameras to your stream by joining your broadcast with any video capable device. Lastly, whenever you broadcast you get built in recording to the cloud. So often, even if I&amp;rsquo;m not broadcasting, I start a stream for recording only.&lt;/p&gt;
+&lt;p&gt;I like keeping a separate computer for streaming, however, if you have a powerful enough computer and you want to keep costs down you could run this software on your presentation computer. Additionally, if you don&amp;rsquo;t have a &amp;ldquo;line in&amp;rdquo; on your sound card for your computer, you can purchase pretty cheap USB sound cards that will give you this capability. Finally, a nice touch is to always make sure your presentation computer is added to the live stream so you can share slides and videos being shown.&lt;/p&gt;
+&lt;p&gt;Last thing to note when setting up your live stream audio, since you are going through your sound mixer, you should turn off any &amp;ldquo;echo cancellation&amp;rdquo; in your streaming software. Often with this setup, it no longer does anything, but additionally, you will get better quality sound with this off. Many times I still keep on &amp;ldquo;automatic volume adjustment&amp;rdquo; so I don&amp;rsquo;t have to monitor the stream levels so much. However, if you can monitor your stream audio and turn that off as well, you can bump up your quality a bit too.&lt;/p&gt;
+&lt;h2 id=&#34;viewing-the-broadcast&#34;&gt;Viewing the Broadcast&lt;/h2&gt;
+&lt;p&gt;You have many options to where you would like to send your broadcast and most of them are free. I personally like to add &lt;a href=&#34;https://online.church/&#34;&gt;Online.Church&lt;/a&gt; on top of whatever platform I&amp;rsquo;m using to broadcast. This gives the church a way to switch out broadcast providers if anything ever happens or changes. It also gives you a way to &amp;ldquo;own&amp;rdquo; the relationship with your viewers more instead of relying on third parties like Youtube and Facebook who can often block access to your viewers.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Android Privacy Protocol</title>
+      <link>https://www.neutron.studio/posts/2021-07-06-android-privacy-protocol/</link>
+      <pubDate>Tue, 06 Jul 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/posts/2021-07-06-android-privacy-protocol/</guid>
+      <description>Recently I&amp;rsquo;ve had the goal to reduce my usage of big tech products and thus reduce the tracking and influence they have in my life. One of the biggest areas to reduce is the phone. Modern Android has all kinds of hooks so that apps and Google services can track you. And it is almost impossible for you to turn off these services and still have the ability to use everyday applications.</description>
+      <content>&lt;p&gt;Recently I&amp;rsquo;ve had the goal to reduce my usage of big tech products and thus reduce the tracking and influence they have in my life. One of the biggest areas to reduce is the phone. Modern Android has all kinds of hooks so that apps and Google services can track you. And it is almost impossible for you to turn off these services and still have the ability to use everyday applications.&lt;/p&gt;
+&lt;p&gt;My first attempt to reduce tracking was to try operating systems such as &lt;a href=&#34;https://calyxos.org/&#34;&gt;CalyxOS&lt;/a&gt; and &lt;a href=&#34;https://grapheneos.org/&#34;&gt;GrapheneOS&lt;/a&gt;. These operating systems do a great job of removing Google services, but the trade-off is that you can use fewer applications because many depend on these services.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://calyxos.org/&#34;&gt;CalyxOS&lt;/a&gt; comes built-in with &lt;a href=&#34;https://microg.org/&#34;&gt;MicroG&lt;/a&gt; which attempts to fill in for these services, however, there are still some apps that do not function well with a Google substitute. Through the usage of these OS&amp;rsquo;s though, I have been able to come up with a privacy protocol to use with a normal Android phone to increase privacy while still maintaining application compatibility.&lt;/p&gt;
+&lt;h2 id=&#34;android-privacy-protocol&#34;&gt;Android Privacy Protocol&lt;/h2&gt;
+&lt;p&gt;The Android Privacy Protocol is a set of methods to configure and use your Android phone to increase your privacy with any standard Android phone while also having the ability to use most modern apps.&lt;/p&gt;
+&lt;p&gt;A general overview of the protocol:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep the default profile anonymous (don&amp;rsquo;t log into a Google account)&lt;/li&gt;
+&lt;li&gt;Use the &lt;a href=&#34;https://auroraoss.com/&#34;&gt;Aurora Store&lt;/a&gt; to install applications&lt;/li&gt;
+&lt;li&gt;Use a &amp;ldquo;Work&amp;rdquo; profile for any Google or other apps you wish to contain and restrict usage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-the-protocol-works&#34;&gt;How the Protocol Works&lt;/h2&gt;
+&lt;p&gt;Android has long given you the ability to not log into your Google account and thus function anonymously;
+however, when you do this, you lose the ability to install applications from the Play Store. You will still receive updates of existing installed apps. To get around this, we use the third-party Play Store app, the &lt;a href=&#34;https://auroraoss.com/&#34;&gt;Aurora Store&lt;/a&gt;. This allows you to download apps from the Play Store without using the Play Store. And thus, you can now use most apps without logging in with a Google account.&lt;/p&gt;
+&lt;p&gt;The last part of the protocol is to use a &amp;ldquo;work&amp;rdquo; profile for applications that you need a Google account for. Android allows you to have multiple users/profiles, however, by default you have to log out of one profile and switch to another. This is useful but can be cumbersome if you use it daily. We can do better! Android also includes a feature that allows you to use a &amp;ldquo;work&amp;rdquo; profile side by side with your personal apps. However, this feature is not accessible and usually only available to enterprise devices. What is interesting though is this feature is available to modern Android users if you have an app that will turn it on for you. The &lt;a href=&#34;https://play.google.com/store/apps/details?id=net.typeblog.shelter&amp;amp;hl=en_US&amp;amp;gl=US&#34;&gt;Shelter app&lt;/a&gt; lets you access this feature even though it might be hidden. In addition to application isolation, the Shelter app lets you shut down all your &amp;ldquo;work apps&amp;rdquo; at once. So you can use your favorite apps, shut them down quickly and isolate their data access to curtail some of their trackings.&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s go over the details of how to set up your phone with the Android Privacy Protocol.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Starting with a new phone, go through the Android setup but make sure to skip Google account setup and restoring from another account or phone. You can still use things like fingerprint unlock but make sure not to connect a Google account.&lt;/li&gt;
+&lt;li&gt;Let the Play Store apply the latest updates.&lt;/li&gt;
+&lt;li&gt;Install the &lt;a href=&#34;https://auroraoss.com/&#34;&gt;Aurora Store&lt;/a&gt;. You can feel free to log into Google here if you wish to have access to your paid apps. The Aurora Store does not connect the Google account outside the app.&lt;/li&gt;
+&lt;li&gt;Install the &lt;a href=&#34;https://play.google.com/store/apps/details?id=net.typeblog.shelter&amp;amp;hl=en_US&amp;amp;gl=US&#34;&gt;Shelter app&lt;/a&gt; from the &lt;a href=&#34;https://auroraoss.com/&#34;&gt;Aurora Store&lt;/a&gt; and setup your &amp;ldquo;work profile&amp;rdquo;. This is where you can log into your Google account if you wish to keep it isolated. Note: if you have trouble installing Aurora or the Shelter App it might be easier to install &lt;a href=&#34;https://f-droid.org/&#34;&gt;F-Droid&lt;/a&gt; first, then install those apps from there.&lt;/li&gt;
+&lt;li&gt;Continued usage: Install personal apps from the Aurora Store and work apps from the Play Store (under your work profile).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note: If you have trouble finding applications on the &lt;a href=&#34;https://auroraoss.com/&#34;&gt;Aurora Store&lt;/a&gt; then use the Play Store under your work profile. Using the Shelter app, you can then clone the app to your personal profile. Lastly, if you wish, you can remove the app from your work profile.&lt;/p&gt;
+&lt;h2 id=&#34;final-words&#34;&gt;Final Words&lt;/h2&gt;
+&lt;p&gt;I still have to do some research on how private using Android mostly anonymously is, but in theory, I think it is a huge gain. I think this method is a good way to stay private while also having access to the widest variety of apps.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Leaking as a Feature</title>
+      <link>https://www.neutron.studio/posts/2021-05-10-leaking-as-a-feature/</link>
+      <pubDate>Mon, 10 May 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/posts/2021-05-10-leaking-as-a-feature/</guid>
+      <description>A while ago I decided to take the plunge and build my own bike. I went with a titanium frame and electronic gear shifting. Really amazing stuff! I&amp;rsquo;ve been tweaking things as I go along trying to both improve my speed but also make a more comfortable ride. Of all the things I&amp;rsquo;ve tried, even from going to a lighter frame and better gearing, the biggest bang for my buck in terms of speed has been changing tires.</description>
+      <content>&lt;p&gt;A while ago I decided to take the plunge and build my own bike. I went with a titanium frame and electronic gear shifting. Really amazing stuff! I&amp;rsquo;ve been tweaking things as I go along trying to both improve my speed but also make a more comfortable ride. Of all the things I&amp;rsquo;ve tried, even from going to a lighter frame and better gearing, the biggest bang for my buck in terms of speed has been changing tires. This is my journey of trying out different tire types.&lt;/p&gt;
+&lt;img alt=&#34;road panther&#34; src=&#34;https://www.neutron.studio/biking/road-panther.jpeg&#34; style=&#34;display: block; margin: 0 auto; width: 500px;&#34;&gt;
+&lt;h2 id=&#34;norm-core-tires&#34;&gt;Norm Core Tires&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve been riding bikes like most people since I&amp;rsquo;ve been a kid and so I figured everyone just uses tube tires. This was fine and I pretty much knew how to change a tire since I&amp;rsquo;ve been young. However, because I&amp;rsquo;m a heavier guy, I learned about pinch flats fast and other roads objects piercing my tubes. When I built my new bike I decided to go with larger tires and thorn resistant tubes.&lt;/p&gt;
+&lt;p&gt;Thorn resistant tubes were great and definitely cut down on the number of flats I had but when moving out to a more rural area I started running into more road debris. I also started to encounter sub-par tubes that would pop at the seams or valve stem. With the combination of both these factors I started to get really annoyed with changing tubes.&lt;/p&gt;
+&lt;img alt=&#34;Tannus Tire&#34; src=&#34;https://www.neutron.studio/biking/tannus.jpeg&#34; style=&#34;display: block; margin: 0 auto;&#34;&gt;
+&lt;h2 id=&#34;solid-tires&#34;&gt;Solid Tires&lt;/h2&gt;
+&lt;p&gt;I started looking for solutions to all the punctures I was having. I kept hearing about Tannus Armour Inserts which put a protective layer between your tire and the tube. This sounded great, however, because of the debris I ran over was really awful, I knew the insert wouldn&amp;rsquo;t protect me from everything.
+While exploring Tannus I found they have an airless tire that would eliminate all worries of ever having a puncture. I read and watched various reviews of the tire and found a wide range of emotions from hatred to love of the tires. The love usually centered around the thought of never having to change a flat again, and the hate usually centered around the extra rolling resistance the tires generate.&lt;/p&gt;
+&lt;p&gt;Since I&amp;rsquo;m a larger biker, I didn&amp;rsquo;t want to lose too much speed but also I&amp;rsquo;m not overly concerned about it. Also most of the reviews focused on the early versions of Tannus tires and not the newer versions which offer better rolling resistance. The older tires were often stated to have 8% more rolling resistance while with some of the newer versions they often state you won&amp;rsquo;t notice the difference. This led me to look up my tubed tires to see what rolling resistance they had. I found the site &lt;a href=&#34;https://www.bicyclerollingresistance.com/&#34;&gt;bicyclerollingresistance.com&lt;/a&gt; and quickly learned the tube tires I was using were pretty awful. So what would it hurt to get a little more resistance? I decided to go with the Tannus Portal tire because it seemed the fastest tire for my wheel size.&lt;/p&gt;
+&lt;h2 id=&#34;solid-tires-review&#34;&gt;Solid Tires Review&lt;/h2&gt;
+&lt;p&gt;First off I installed the solid tires myself. And while the whole process was pretty awful and time consuming, at least you only have to do it once. So this was fine to me. However, once you get the solid tires on, they aren&amp;rsquo;t coming off with out destroying them. You have to be all in on these tires! But I was, so again not a big deal. For some people this may be a huge show stopper.&lt;/p&gt;
+&lt;p&gt;It takes some time to break in the solid tires and I could definitely feel the difference once they loosened up. The overall ride quality was really surprisingly good. It&amp;rsquo;s not like you can immediately notice your riding on solid tires. However, vibrations from the road definitely translate more into the bike. So while I couldn&amp;rsquo;t notice much difference at any given time, over a long ride my butt would definitely be more sore on solid tires. After breaking in the tires and tracking a few rides, I was definitely about 1 mph slower. However, as I extended my rides to locations where roads were smoother I noticed on those portions of the ride while I was not breaking my previous records, I was matching my previous ride speeds.&lt;/p&gt;
+&lt;p&gt;Overall, I loved the freedom that the solid tires provided and depending on the roads you ride on, you might not notice too much of a change. If I was a commuter and riding on smooth city streets I think these tires would be my tire of choice. However, I was training for a triathlon and wanted something faster for the race.&lt;/p&gt;
+&lt;img alt=&#34;tubeless tire&#34; src=&#34;https://www.neutron.studio/biking/tubeless.jpeg&#34; style=&#34;display: block; margin: 0 auto; width: 600px;&#34;&gt;
+&lt;h2 id=&#34;tubeless-tires&#34;&gt;Tubeless Tires&lt;/h2&gt;
+&lt;p&gt;During my research on solid tires, I also ran into tubeless tires. Tubeless while being easier to puncture, use a self healing goop that seals up holes and leaks. They definitely don&amp;rsquo;t hold air as good as tube tires but anything that leaks is immediately filled with the self healing slime. And the rolling resistance of these tires is amazing. I decided I wanted to try these also but not throw out my solid tires. So I decided to have two sets of wheels, one for solid and one for tubeless. I opted for Continental tires again but this time the tubeless version offered closer to best in class rolling resistance compared to near the bottom of performance on the tube version.&lt;/p&gt;
+&lt;p&gt;The tubeless install was also difficult but not near as bad as the solid tire. And right off the bat with my first ride I was immediately 2 mph faster than anything I had ever done. I think part of the reason for the extra speed was because I had just gotten good resistance training from the solid tires, but for sure the lesser rolling resistance was contributing to the extra performance.  And out of any change I ever made to the bike, this was probably the largest gain I had made by changing one thing.&lt;/p&gt;
+&lt;p&gt;After a while on the tubeless, I had a flat pretty fast. It was a side puncture that seemed odd so maybe it was a defect in the tire. However, I came to the conclusion that I was always having flats on the rear tire probably due to the extra weight. So I decided to keep the fast front tire and switch my back tire to a Pirelli Cinturato Velo tubeless. This tire had extremely more protection and was still relatively fast compared to tube tires. Also I switched to Muck Off Sealant which seems to much better than the previous sealant I used. With this combination I haven&amp;rsquo;t had any flats so far on the tubeless tires.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Voice Assistants are the Modern Day Groom of the Stool</title>
+      <link>https://www.neutron.studio/posts/2019-08-02-modern-day-groom-of-the-stool/</link>
+      <pubDate>Fri, 02 Aug 2019 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/posts/2019-08-02-modern-day-groom-of-the-stool/</guid>
+      <description>All the rage in the news lately has been the revelation that voice assistants are listening and recording many of our conversations and employees and contractors of these companies can access these recordings. And while accessing these recordings can be anonymous, happens to legitimately improve the service, and happens to a very low percentage of recordings, it still makes the most logical of us flinch. Why is that?
+The 1st Earl of Holland, Groom of the Stool to Charles I, until 1643 Here is a sample of some of the latest stories:</description>
+      <content>&lt;p&gt;All the rage in the news lately has been the revelation that voice assistants are listening and recording many of our conversations and employees and contractors of these companies can access these recordings. And while accessing these recordings can be anonymous, happens to legitimately improve the service, and happens to a very low percentage of recordings, it still makes the most logical of us flinch. Why is that?&lt;/p&gt;
+&lt;img class=&#34;img-center&#34; alt=&#34;The 1st Earl of Holland, Groom of the Stool to Charles I, until 1643&#34; src=&#34;https://www.neutron.studio/img/groom.jpg&#34;&gt;
+&lt;div class=&#34;text-center&#34;&gt;
+  &lt;em&gt;The 1st Earl of Holland, Groom of the Stool to Charles I, until 1643&lt;/em&gt;
+  &lt;br&gt;&lt;br&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is a sample of some of the latest stories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.theverge.com/2019/8/1/20750327/google-assistant-voice-recording-investigation-europe?ref=hackernoon.com&#34;&gt;Google will pause listening to EU voice recordings while regulators investigate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.newsweek.com/amazon-alexa-recordings-romania-sex-privacy-1452173?ref=hackernoon.com&#34;&gt;Amazon Alexa Capture Audio of People Having Sex, Possible Sexual Assaults: Report&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.theguardian.com/technology/2019/aug/02/apple-halts-practice-of-contractors-listening-in-to-users-on-siri?ref=hackernoon.com&#34;&gt;Apple halts practice of contractors listening in to users on Siri&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The thing I came to realize is that voice assistants are like butlers or more interestingly like Grooms of the Stool. What are Grooms of the Stool? Check out &lt;a href=&#34;https://en.wikipedia.org/wiki/Groom_of_the_Stool&#34;&gt;Wikipedia&lt;/a&gt; for more detailed info. In a nutshell, they helped the king with his toileting needs. That could include bringing the king water or towels, maybe even helping him wash his butt. The groom would even interface with the royal doctor to supply the doctor with information about the king&amp;rsquo;s bowel movements and diet.&lt;/p&gt;
+&lt;p&gt;The thing is this position was so intimate that this position became one of high trust, confidence, and power. The Groom of the Stool often knew state and personal secrets. Eventually the position evolved into an administration of royal finances and under Henry VII was given the responsibility of setting national fiscal policy.&lt;/p&gt;
+&lt;p&gt;Google, Alexa, and Siri right now are fairly simple in terms of what they can do. They provide some convenient services but it is at the cost of being very intimate with us. They definitely can take some drudgery out of the everyday. With this, they not only listen in but also gather many points of data on us.&lt;/p&gt;
+&lt;p&gt;My point of all this is not to scare you. After all, I&amp;rsquo;m sure many Grooms of the Stool were very well liked and highly valued. But if you wish for tech companies to take care of your private areas, you better trust them a lot. And for tech companies, you better not lose our trust, or you might get beheaded pretty quick. I think we are seeing this already for calls to break up tech companies like Facebook and Amazon.&lt;/p&gt;
+&lt;p&gt;Lastly, to keep some separation of powers maybe don&amp;rsquo;t let the Groom of the Stool also control your finances. I&amp;rsquo;m thinking this could be Apple and their new &lt;a href=&#34;https://www.theverge.com/2019/7/30/20747618/apple-confirms-apple-card-august-launch&#34;&gt;Apple credit card&lt;/a&gt; and &lt;a href=&#34;https://www.theverge.com/2019/7/30/20747618/apple-confirms-apple-card-august-launch&#34;&gt;Facebook and their Libra coin&lt;/a&gt;. However, Amazon is probably already pretty close to this power if you shop on Amazon and use Alexa.&lt;/p&gt;
+&lt;p&gt;In conclusion, keep your friends close and your enemies closer, and don&amp;rsquo;t let tech companies wipe your butt unless they are highly trusted.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href=&#34;https://en.wikipedia.org/wiki/Groom_of_the_Stool&#34;&gt;Groom of the Stool, Wikipedia&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
