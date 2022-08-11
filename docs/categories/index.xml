@@ -5,6 +5,117 @@
     <link>https://www.neutron.studio/categories/</link>
     <description>Recent content in Categories on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.neutron.studio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 -0600</lastBuildDate><atom:link href="https://www.neutron.studio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://www.neutron.studio/categories/python/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/python/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>weather api</title>
+      <link>https://www.neutron.studio/categories/weather-api/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/weather-api/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>weatherkit</title>
+      <link>https://www.neutron.studio/categories/weatherkit/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/weatherkit/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>audio</title>
+      <link>https://www.neutron.studio/categories/audio/</link>
+      <pubDate>Tue, 28 Dec 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/audio/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>church</title>
+      <link>https://www.neutron.studio/categories/church/</link>
+      <pubDate>Tue, 28 Dec 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/church/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://www.neutron.studio/categories/android/</link>
+      <pubDate>Tue, 06 Jul 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/android/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://www.neutron.studio/categories/privacy/</link>
+      <pubDate>Tue, 06 Jul 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/privacy/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>biking</title>
+      <link>https://www.neutron.studio/categories/biking/</link>
+      <pubDate>Mon, 10 May 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/biking/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>tires</title>
+      <link>https://www.neutron.studio/categories/tires/</link>
+      <pubDate>Mon, 10 May 2021 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/tires/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://www.neutron.studio/categories/tech/</link>
+      <pubDate>Fri, 02 Aug 2019 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/tech/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>voice</title>
+      <link>https://www.neutron.studio/categories/voice/</link>
+      <pubDate>Fri, 02 Aug 2019 20:00:00 -0600</pubDate>
+      
+      <guid>https://www.neutron.studio/categories/voice/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>
