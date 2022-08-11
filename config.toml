@@ -1,0 +1,46 @@
+baseURL = 'https://www.neutron.studio/'
+languageCode = 'en-us'
+title = 'Neutron Studio'
+theme = "terminal"
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
+[params]
+  themeColor = "blue"
+  centerTheme = true
+  favicon = "/favicon.ico"
+  readingTime = true
+
+[params.twitter]
+  creator = "pizzapanther"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Neutron Studio"
+    subtitle = "Web applications with cat logos"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Neutron Studio"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/posts/"
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact"
