@@ -1,4 +1,4 @@
-baseURL = 'https://www.neutron.studio/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Neutron Studio'
 theme = "terminal"
