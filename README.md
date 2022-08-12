@@ -1,6 +1,12 @@
 
-## Setup
+## Dev Serve
 
 ```
-jekyll serve
+hugo server -D
+```
+
+## Build
+
+```
+hugo -D -d docs/
 ```
