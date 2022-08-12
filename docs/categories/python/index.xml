@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on Neutron Studio</title>
-    <link>https://www.neutron.studio/categories/python/</link>
+    <link>/categories/python/</link>
     <description>Recent content in python on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 -0600</lastBuildDate><atom:link href="https://www.neutron.studio/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 -0600</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using WeatherKit with Python</title>
-      <link>https://www.neutron.studio/posts/2022-08-09-weatherkit-python/</link>
+      <link>/posts/2022-08-09-weatherkit-python/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
       
-      <guid>https://www.neutron.studio/posts/2022-08-09-weatherkit-python/</guid>
+      <guid>/posts/2022-08-09-weatherkit-python/</guid>
       <description>Apple bought out the Dark Sky weather company in 2020. They plan on shutting down the Darky Sky API and replacing it with the new WeatherKit service. The WeatherKit service is now in beta and can be used to retrieve weather forecasts and current conditions.
 The Dark Sky API was extremely easy to use and provided excellent weather data. The WeatherKit API functions much the same as the Dark Sky API, however, the authorization is very different and some what more difficult.</description>
       <content>&lt;p&gt;Apple bought out the Dark Sky weather company in 2020. They plan on shutting down the Darky Sky API and replacing it with the new WeatherKit service. The WeatherKit service is now in beta and can be used to retrieve weather forecasts and current conditions.&lt;/p&gt;
