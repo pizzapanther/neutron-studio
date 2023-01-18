@@ -18,7 +18,7 @@ If you do use the staged build approach, use the [target](https://docs.docker.co
 
 ## Sync User Permissions
 
-It's good practice to not run as root but also for you development container it's nice to sync up the container user with your local user. This ensures your files mounted outside the container will have the correct permissions. To do this:
+It's good practice to not run as root but also for your development container it's nice to sync up the container user with your local user. This ensures your files mounted outside the container will have the correct permissions. To do this:
 
 ### 1. Add some build args to your Dockerfile
 
@@ -42,7 +42,7 @@ RUN echo 'myuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 ## Share Secrets
 
-There is a `secrets` attribute you can use in Docker Compose, however, since this is for development we don't need to secure a production environment, I found it easier to just mount some shared files and directories. Below is an example of some "secrets" I like to share.
+There is a `secrets` attribute you can use in Docker Compose. However, since this is for development we don't need to secure a production environment. I've found it easier to just mount some shared files and directories. Below is an example of some "secrets" I like to share.
 
 ```yaml
 services:
@@ -68,7 +68,7 @@ And one of my other favorite tools: [thefuck](https://github.com/nvbn/thefuck)
 
 ## Share Shell Environments
 
-Since you have a development container you can now really easy make a share development environment setup. I like to include a shared `.bashrc` in my repository and then in the Dockerfile copy that to the user's home directory.
+Since you have a development container you can now really easy make a shared development environment setup. I like to include a shared `.bashrc` in my repository and then in the Dockerfile copy that to the user's home directory.
 
 `COPY .bashrc /home/myuser/`
 
@@ -122,7 +122,7 @@ RUN ln -s /opt/myapp/.bash_history /home/myuser/.bash_history
 version: "3.9"
 
 services:
-    roci:
+    myapp:
         network_mode: host
         build:
             context: .
