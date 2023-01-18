@@ -159,7 +159,7 @@
 <p>Your development container will probably diverge from your production and CI containers so you can handle having two diverging containers by either having a multi-staged build or having a separate Dockerfile for development. I normally fall into having a separate Dockerfile because your production and CI containers are often optimized for caching and being efficient to ship the container around. Trying to fit a development workflow into that can become clumsy and difficult to do cleanly. The downside is that you may duplicate some Dockerfile code between the two files. However, this should be small since the development container is often very few Dockerfile lines.</p>
 <p>If you do use the staged build approach, use the <a href="https://docs.docker.com/compose/compose-file/compose-file-v3/#target">target</a> attribute in your Docker Compose file.</p>
 <h2 id="sync-user-permissions">Sync User Permissions<a href="#sync-user-permissions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>It&rsquo;s good practice to not run as root but also for you development container it&rsquo;s nice to sync up the container user with your local user. This ensures your files mounted outside the container will have the correct permissions. To do this:</p>
+<p>It&rsquo;s good practice to not run as root but also for your development container it&rsquo;s nice to sync up the container user with your local user. This ensures your files mounted outside the container will have the correct permissions. To do this:</p>
 <h3 id="1-add-some-build-args-to-your-dockerfile">1. Add some build args to your Dockerfile<a href="#1-add-some-build-args-to-your-dockerfile" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <pre tabindex="0"><code>ARG userid
 ARG groupid
@@ -171,7 +171,7 @@ RUN echo &#39;myuser ALL=(ALL) NOPASSWD:ALL&#39; &gt;&gt; /etc/sudoers
 </code></pre><h3 id="3-when-building-pass-in-your-build-args">3. When building, pass in your build args<a href="#3-when-building-pass-in-your-build-args" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <p><code>docker-compose build --build-arg userid=$(id -u) --build-arg groupid=$(id -g)</code></p>
 <h2 id="share-secrets">Share Secrets<a href="#share-secrets" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>There is a <code>secrets</code> attribute you can use in Docker Compose, however, since this is for development we don&rsquo;t need to secure a production environment, I found it easier to just mount some shared files and directories. Below is an example of some &ldquo;secrets&rdquo; I like to share.</p>
+<p>There is a <code>secrets</code> attribute you can use in Docker Compose. However, since this is for development we don&rsquo;t need to secure a production environment. I&rsquo;ve found it easier to just mount some shared files and directories. Below is an example of some &ldquo;secrets&rdquo; I like to share.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">myapp</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
@@ -186,7 +186,7 @@ RUN echo &#39;myuser ALL=(ALL) NOPASSWD:ALL&#39; &gt;&gt; /etc/sudoers
 <p>Especially if you use a separate Dockerfile and thus don&rsquo;t need to worry about the container size, install some extra development tools. Some apt packages I like to install: <code>procps, nano, vim, sudo, htop, tmux, redis-tools, autojump, openssh-client, wget, unzip</code></p>
 <p>And one of my other favorite tools: <a href="https://github.com/nvbn/thefuck">thefuck</a></p>
 <h2 id="share-shell-environments">Share Shell Environments<a href="#share-shell-environments" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Since you have a development container you can now really easy make a share development environment setup. I like to include a shared <code>.bashrc</code> in my repository and then in the Dockerfile copy that to the user&rsquo;s home directory.</p>
+<p>Since you have a development container you can now really easy make a shared development environment setup. I like to include a shared <code>.bashrc</code> in my repository and then in the Dockerfile copy that to the user&rsquo;s home directory.</p>
 <p><code>COPY .bashrc /home/myuser/</code></p>
 <h2 id="remember-your-command-history">Remember Your Command History<a href="#remember-your-command-history" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Since containers are immutable, they will lose your command history on rebuild. You can solve this by linking in a <code>.bash_history</code> file in your Dockerfile.</p>
@@ -227,7 +227,7 @@ RUN echo &#39;myuser ALL=(ALL) NOPASSWD:ALL&#39; &gt;&gt; /etc/sudoers
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3.9&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">roci</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">myapp</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">network_mode</span>: <span style="color:#ae81ff">host</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">build</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">context</span>: <span style="color:#ae81ff">.</span>

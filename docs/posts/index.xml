@@ -19,7 +19,7 @@
 &lt;p&gt;Your development container will probably diverge from your production and CI containers so you can handle having two diverging containers by either having a multi-staged build or having a separate Dockerfile for development. I normally fall into having a separate Dockerfile because your production and CI containers are often optimized for caching and being efficient to ship the container around. Trying to fit a development workflow into that can become clumsy and difficult to do cleanly. The downside is that you may duplicate some Dockerfile code between the two files. However, this should be small since the development container is often very few Dockerfile lines.&lt;/p&gt;
 &lt;p&gt;If you do use the staged build approach, use the &lt;a href=&#34;https://docs.docker.com/compose/compose-file/compose-file-v3/#target&#34;&gt;target&lt;/a&gt; attribute in your Docker Compose file.&lt;/p&gt;
 &lt;h2 id=&#34;sync-user-permissions&#34;&gt;Sync User Permissions&lt;/h2&gt;
-&lt;p&gt;It&amp;rsquo;s good practice to not run as root but also for you development container it&amp;rsquo;s nice to sync up the container user with your local user. This ensures your files mounted outside the container will have the correct permissions. To do this:&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s good practice to not run as root but also for your development container it&amp;rsquo;s nice to sync up the container user with your local user. This ensures your files mounted outside the container will have the correct permissions. To do this:&lt;/p&gt;
 &lt;h3 id=&#34;1-add-some-build-args-to-your-dockerfile&#34;&gt;1. Add some build args to your Dockerfile&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ARG userid
 ARG groupid
@@ -31,7 +31,7 @@ RUN echo &amp;#39;myuser ALL=(ALL) NOPASSWD:ALL&amp;#39; &amp;gt;&amp;gt; /etc/s
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-when-building-pass-in-your-build-args&#34;&gt;3. When building, pass in your build args&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;docker-compose build --build-arg userid=$(id -u) --build-arg groupid=$(id -g)&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;share-secrets&#34;&gt;Share Secrets&lt;/h2&gt;
-&lt;p&gt;There is a &lt;code&gt;secrets&lt;/code&gt; attribute you can use in Docker Compose, however, since this is for development we don&amp;rsquo;t need to secure a production environment, I found it easier to just mount some shared files and directories. Below is an example of some &amp;ldquo;secrets&amp;rdquo; I like to share.&lt;/p&gt;
+&lt;p&gt;There is a &lt;code&gt;secrets&lt;/code&gt; attribute you can use in Docker Compose. However, since this is for development we don&amp;rsquo;t need to secure a production environment. I&amp;rsquo;ve found it easier to just mount some shared files and directories. Below is an example of some &amp;ldquo;secrets&amp;rdquo; I like to share.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;services&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;myapp&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;volumes&lt;/span&gt;:
@@ -46,7 +46,7 @@ RUN echo &amp;#39;myuser ALL=(ALL) NOPASSWD:ALL&amp;#39; &amp;gt;&amp;gt; /etc/s
 &lt;p&gt;Especially if you use a separate Dockerfile and thus don&amp;rsquo;t need to worry about the container size, install some extra development tools. Some apt packages I like to install: &lt;code&gt;procps, nano, vim, sudo, htop, tmux, redis-tools, autojump, openssh-client, wget, unzip&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;And one of my other favorite tools: &lt;a href=&#34;https://github.com/nvbn/thefuck&#34;&gt;thefuck&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;share-shell-environments&#34;&gt;Share Shell Environments&lt;/h2&gt;
-&lt;p&gt;Since you have a development container you can now really easy make a share development environment setup. I like to include a shared &lt;code&gt;.bashrc&lt;/code&gt; in my repository and then in the Dockerfile copy that to the user&amp;rsquo;s home directory.&lt;/p&gt;
+&lt;p&gt;Since you have a development container you can now really easy make a shared development environment setup. I like to include a shared &lt;code&gt;.bashrc&lt;/code&gt; in my repository and then in the Dockerfile copy that to the user&amp;rsquo;s home directory.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;COPY .bashrc /home/myuser/&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;remember-your-command-history&#34;&gt;Remember Your Command History&lt;/h2&gt;
 &lt;p&gt;Since containers are immutable, they will lose your command history on rebuild. You can solve this by linking in a &lt;code&gt;.bash_history&lt;/code&gt; file in your Dockerfile.&lt;/p&gt;
@@ -87,7 +87,7 @@ RUN echo &amp;#39;myuser ALL=(ALL) NOPASSWD:ALL&amp;#39; &amp;gt;&amp;gt; /etc/s
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3.9&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;services&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;roci&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;myapp&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;network_mode&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;host&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;build&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;context&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.&lt;/span&gt;
