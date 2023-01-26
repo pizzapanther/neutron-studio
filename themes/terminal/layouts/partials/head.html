@@ -3,7 +3,9 @@
 <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.Subtitle }}{{ else if .Description}}{{ .Description | plainify }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
 <meta name="keywords" content="{{ with .Params.Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.Keywords }}{{ end }}" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="{{ .Permalink }}" />
+{{ if (isset .Params "canonical_url") }}
+<link rel="canonical" href="{{ .Params.canonical_url }}" />
+{{ end }}
 
 {{ template "_internal/google_analytics.html" . }}
 
