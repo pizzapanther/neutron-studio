@@ -90,15 +90,15 @@ readingTime: false
 <div class="projects">
   <div class="v-card v-sheet theme--light">
     <div class="v-card__title">
-      <i aria-hidden="true" class="mdi mdi-source-branch-sync block"></i>
-      <h3>Neutron Sync</h3>
-      <h4>Sync SSH keys, config files, settings, etc</h4>
+      <i aria-hidden="true" class="mdi mdi-account-group block"></i>
+      <h3>TeamBeat</h3>
+      <h4>Keep your remote team on track with async e-mail scrums</h4>
     </div>
     <div class="v-card__text">
-      Synchronization tool that helps you synchronize your small configuration files. Since these files are often sensitive, everything is encrypted locally before being stored.
+      Keep track of your team without wasting time in meetings. Ideal for remote teams especially in different timezones.
     </div>
     <div class="v-card__actions">
-      <a href="https://www.neutronsync.com/" target="_blank" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary">
+      <a href="https://www.teambeat.app/" target="_blank" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary">
         <span class="v-btn__content">
           Open App
           <i aria-hidden="true" class="v-icon notranslate mdi mdi-open-in-new theme--light"></i>
