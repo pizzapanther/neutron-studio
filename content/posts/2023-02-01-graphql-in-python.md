@@ -6,7 +6,7 @@ categories:
   - graphql
   - development
 cover: /img/graphql.png
-canonical_url:
+canonical_url: https://hackernoon.com/making-graphql-queries-in-python-like-a-boss
 ---
 
 GraphQL is a newer way to create APIs that are very flexible and give users more control over how they use your API. However, with this extra control in your hands, it puts more effort on your part on how to call the GraphQL API. Unlike a REST API which you call and then receive a response determined by the API developer, with a GraphQL API, you have to develop queries to pull out information that is important to you. In Python there are several client libraries that can help you call GraphQL APIs more easily.

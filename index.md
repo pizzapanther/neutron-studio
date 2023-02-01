@@ -51,15 +51,15 @@ title: Home
     </v-card>
     <v-card>
       <v-card-title>
-        <v-icon color="accent">mdi-broadcast</v-icon>
-        <h3>PodcastBible.app</h3>
-        <h4>Create a custom Bible Podcast.</h4>
+        <v-icon color="accent">mdi-source-repository</v-icon>
+        <h3>Neutron Sync</h3>
+        <h4>Sync your dotfiles with an encrypted Git repo</h4>
       </v-card-title>
       <v-card-text>
-        The Podcast Bible lets you create a custom reading plan tailored to your needs via a custom podcast feed.
+        Neutron Sync is a small command line utility to sync dotfiles across machines via an encrypted Git repo.
       </v-card-text>
       <v-card-actions>
-        <v-btn href="https://www.podcastbible.app/" target="_blank" color="primary">
+        <v-btn href="https://github.com/neutron-sync/neutron-sync" target="_blank" color="primary">
           Open App
           <v-icon>mdi-open-in-new</v-icon>
         </v-btn>
