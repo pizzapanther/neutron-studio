@@ -6,13 +6,43 @@
     <description>Recent content in Categories on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>development</title>
       <link>/categories/development/</link>
-      <pubDate>Tue, 31 Jan 2023 00:00:00 -0600</pubDate>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
       
       <guid>/categories/development/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>/categories/javascript/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/javascript/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>parcel</title>
+      <link>/categories/parcel/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/parcel/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>/categories/vue/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/vue/</guid>
       <description></description>
       <content></content>
     </item>

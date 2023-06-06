@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Using Vue 3 with Parcel JS :: Neutron Studio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="While all the buzz lately is around the Javascript build tool Vite especially in the Vue.js community, I still prefer Parcel for building my Vue.js applications. However, getting started with Vue.js and Parcel is a little tricky because most tutorials and docs focus around Vite or other more popular build tools. This article documents how to setup Parcel to build a Vue.js project. But first why would even want to use Parcel?" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://hackernoon.com/using-vue-3-with-parcel-js" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Using Vue 3 with Parcel JS">
+<meta property="og:description" content="While all the buzz lately is around the Javascript build tool Vite especially in the Vue.js community, I still prefer Parcel for building my Vue.js applications. However, getting started with Vue.js and Parcel is a little tricky because most tutorials and docs focus around Vite or other more popular build tools. This article documents how to setup Parcel to build a Vue.js project. But first why would even want to use Parcel?" />
+<meta property="og:url" content="/posts/2023-06-04-parcel-and-vue-is-love/" />
+<meta property="og:site_name" content="Neutron Studio" />
+
+  <meta property="og:image" content="/img/parcel-vue.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="vue" />
+
+  <meta property="article:section" content="parcel" />
+
+  <meta property="article:section" content="javascript" />
+
+  <meta property="article:section" content="development" />
+
+
+  <meta property="article:published_time" content="2023-06-03 00:00:00 -0600 MDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Neutron Studio
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts/">Blog</a></li>
+        
+      
+        
+          <li><a href="/contact">Contact</a></li>
+        
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts/">Blog</a></li>
+      
+    
+      
+        <li><a href="/contact">Contact</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2023-06-04-parcel-and-vue-is-love/">Using Vue 3 with Parcel JS</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2023-06-03
+        
+      </span>
+    
+    
+    
+      <span class="post-reading-time">:: 4 min read (660 words)</span>
+    
+  </div>
+
+  
+  
+  <img src="/img/parcel-vue.png"
+    class="post-cover"
+    alt="Using Vue 3 with Parcel JS"
+    title="Cover Image" />
+
+
+  
+
+  <div class="post-content"><div>
+        <p>While all the buzz lately is around the Javascript build tool <a href="https://vitejs.dev/">Vite</a> especially in the Vue.js community, I still prefer <a href="https://parceljs.org/">Parcel</a> for building my Vue.js applications. However, getting started with Vue.js and Parcel is a little tricky because most tutorials and docs focus around Vite or other more popular build tools. This article documents how to setup Parcel to build a Vue.js project. But first why would even want to use Parcel?</p>
+<h2 id="why-use-parcel">Why Use Parcel?<a href="#why-use-parcel" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>While Vite works great and builds applications fast, it&rsquo;s focus is on building things fast. That sounds great to a lot of people probably, for me that is an anti-pattern. Yes I want my devs tools to be fast, but if that is the primary focus, then often times the developer experience is often a secondary concern. Instead, I want developers tools that are primarily focused on developer experience and also fast. I think that Parcel delivers great on this promise. Most Javascript build tools like Vite end up being wrappers around existing tools but with the configuration obscured away and pre-configured for you. While this is great to get started fast, you eventually hit configuration roadblocks and complexity as your app grows. Parcel has a zero-configuration philosophy and is not a wrapper around older tools. Once you get past setting it up, you encounter far fewer configuration roadblocks as your app grows.</p>
+<p>The only downside with using Parcel especially with Vue, is that the setup is not documented as much as I would like. Additionally, with the release of Parcel 2 and Vue 3 there are a few quirks with the setup. Hopefully, they will get worked out in the future, but for now, the instructions below will show you how to setup a Vue app with Parcel.</p>
+<h2 id="building-a-vue-3-app-with-parcel">Building a Vue 3 App with Parcel<a href="#building-a-vue-3-app-with-parcel" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>To get started, first you need a Vue 3 app. If you need to start one, the <a href="https://parceljs.org/languages/vue/">Parcel documentation</a> is a good place to get a skeleton app to start with. If you use just those instructions though, you&rsquo;ll probably get some errors or warnings we need to take of.</p>
+<h3 id="fix-1-packagejson---vue-bundle">Fix 1: package.json - Vue Bundle<a href="#fix-1-packagejson---vue-bundle" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>In your <code>package.json</code> you&rsquo;ll want to add an alias section. This will let Parcel know the correct version of Vue to use when bundling your application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;alias&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;vue&#34;</span>: <span style="color:#e6db74">&#34;vue/dist/vue.esm-browser.js&#34;</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span></code></pre></div><h4 id="special-note-for-production-builds">Special Note for Production Builds<a href="#special-note-for-production-builds" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<p>Right now there is <a href="https://github.com/parcel-bundler/parcel/issues/7663">a bug</a> when you switch to production builds with Vue 3 and Parcel. So when you do a production build you need to switch the alias to <code>vue.esm-browser.prod.js</code>. I just use a pre-build command in my CI/CD to switch that out for production builds: <code>sed -i 's/vue.esm-browser.js/vue.esm-browser.prod.js/g' package.json</code></p>
+<h3 id="fix-2-packagejson---build-type-may-be-needed">Fix 2: package.json - Build type (may be needed)<a href="#fix-2-packagejson---build-type-may-be-needed" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Depending on your build target and your output context you may want to add <code>type</code> and <code>targets</code> also to your <code>package.json</code>. It doesn&rsquo;t hurt to add them and to be explicit about what you&rsquo;re building. I also like to use <code>targets</code> often because I want Parcel to build multiple things.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;type&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;module&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;targets&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;myapp&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;src/index.js&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;distDir&#34;</span>: <span style="color:#e6db74">&#34;dist&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;context&#34;</span>: <span style="color:#e6db74">&#34;browser&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;outputFormat&#34;</span>: <span style="color:#e6db74">&#34;global&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span></code></pre></div><h3 id="fix-3-main-app-js---silence-more-warnings-and-include-vue-options-api">Fix 3: Main App JS - Silence More Warnings and Include Vue Options API<a href="#fix-3-main-app-js---silence-more-warnings-and-include-vue-options-api" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>In your you main app JS, you are probably getting additional warnings or you may want to include the Vue Options API. Put these variables in you initial app JS file to silence the dev tool warnings and explicitly setup the Vue Options API or not. You probably want to put them towards the top of the file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">__VUE_OPTIONS_API__</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;production&#39;</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">__VUE_PROD_DEVTOOLS__</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">__VUE_PROD_DEVTOOLS__</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Have fun with your new Vue 3 app development and throw out your aspirin as you&rsquo;ll now be on easy street and have far fewer configuration errors. Parcel JS will handle most other setup, even installing the transformers you&rsquo;ll need to compile things like Vue Single File Components and Typescript.</p>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
