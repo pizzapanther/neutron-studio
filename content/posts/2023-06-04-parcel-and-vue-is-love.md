@@ -6,7 +6,7 @@ categories:
   - parcel
   - javascript
   - development
-cover: /img/parcel-vue.png
+cover: /img/parcel-vue.jpg
 canonical_url: https://hackernoon.com/using-vue-3-with-parcel-js
 ---
 
