@@ -38,3 +38,7 @@ You're good to go! The plugin was cloned to `~/.tmux/plugins/` dir and sourced.
 
 All the plugins are installed to `~/.tmux/plugins/` so alternatively you can
 find plugin directory there and remove it.
+
+### More Docs
+
+For more docs on plugins see [TPM - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm).

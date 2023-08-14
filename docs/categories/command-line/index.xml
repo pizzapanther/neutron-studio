@@ -41,6 +41,8 @@ echo &amp;#34;run &amp;#39;/usr/share/tmux-plugin-manager/tpm&amp;#39;&amp;#34; 
 &lt;/ol&gt;
 &lt;p&gt;All the plugins are installed to &lt;code&gt;~/.tmux/plugins/&lt;/code&gt; so alternatively you can
 find plugin directory there and remove it.&lt;/p&gt;
+&lt;h3 id=&#34;more-docs&#34;&gt;More Docs&lt;/h3&gt;
+&lt;p&gt;For more docs on plugins see &lt;a href=&#34;https://github.com/tmux-plugins/tpm&#34;&gt;TPM - Tmux Plugin Manager&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     
