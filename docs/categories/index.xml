@@ -5,8 +5,48 @@
     <link>/categories/</link>
     <description>Recent content in Categories on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cli</title>
+      <link>/categories/cli/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/cli/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>command line</title>
+      <link>/categories/command-line/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/command-line/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>/categories/terminal/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/terminal/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>/categories/tmux/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/tmux/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>development</title>
       <link>/categories/development/</link>
