@@ -6,7 +6,47 @@
     <description>Recent content in Categories on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>audio</title>
+      <link>/categories/audio/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/audio/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>/categories/bash/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/bash/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>pactl</title>
+      <link>/categories/pactl/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/pactl/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>pulse audio</title>
+      <link>/categories/pulse-audio/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/categories/pulse-audio/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>cli</title>
       <link>/categories/cli/</link>
@@ -143,16 +183,6 @@
       <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
       
       <guid>/categories/weatherkit/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>audio</title>
-      <link>/categories/audio/</link>
-      <pubDate>Tue, 28 Dec 2021 20:00:00 -0600</pubDate>
-      
-      <guid>/categories/audio/</guid>
       <description></description>
       <content></content>
     </item>

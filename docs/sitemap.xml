@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/audio/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>/categories/bash/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
-    <lastmod>2023-08-14T00:00:00-06:00</lastmod>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>/categories/pactl/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>/categories/pulse-audio/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>/posts/2023-09-06-set-default-sound-ubuntu/</loc>
+    <lastmod>2023-09-06T00:00:00-06:00</lastmod>
   </url><url>
     <loc>/categories/cli/</loc>
     <lastmod>2023-08-14T00:00:00-06:00</lastmod>
@@ -12,12 +33,6 @@
     <lastmod>2023-08-14T00:00:00-06:00</lastmod>
   </url><url>
     <loc>/posts/2023-08-14-tmux-plugins-ubuntu/</loc>
-    <lastmod>2023-08-14T00:00:00-06:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2023-08-14T00:00:00-06:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2023-08-14T00:00:00-06:00</lastmod>
   </url><url>
     <loc>/categories/terminal/</loc>
@@ -67,9 +82,6 @@
   </url><url>
     <loc>/categories/weatherkit/</loc>
     <lastmod>2022-08-09T00:00:00-06:00</lastmod>
-  </url><url>
-    <loc>/categories/audio/</loc>
-    <lastmod>2021-12-28T20:00:00-06:00</lastmod>
   </url><url>
     <loc>/categories/church/</loc>
     <lastmod>2021-12-28T20:00:00-06:00</lastmod>

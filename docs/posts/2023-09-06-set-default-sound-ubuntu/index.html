@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Setting the Default Sound Source and Sink on Ubuntu :: Neutron Studio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="If you&amp;rsquo;re a modern office worker you probably do a lot of video calls and it&amp;rsquo;s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn&amp;rsquo;t do anything here, so you&amp;rsquo;re at the mercy of randomness unless you have a script to set the default for you." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Setting the Default Sound Source and Sink on Ubuntu">
+<meta property="og:description" content="If you&amp;rsquo;re a modern office worker you probably do a lot of video calls and it&amp;rsquo;s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn&amp;rsquo;t do anything here, so you&amp;rsquo;re at the mercy of randomness unless you have a script to set the default for you." />
+<meta property="og:url" content="/posts/2023-09-06-set-default-sound-ubuntu/" />
+<meta property="og:site_name" content="Neutron Studio" />
+
+  <meta property="og:image" content="/img/pulseaudio.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="audio" />
+
+  <meta property="article:section" content="pulse audio" />
+
+  <meta property="article:section" content="bash" />
+
+  <meta property="article:section" content="pactl" />
+
+
+  <meta property="article:published_time" content="2023-09-06 00:00:00 -0600 -0600" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Neutron Studio
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts/">Blog</a></li>
+        
+      
+        
+          <li><a href="/contact">Contact</a></li>
+        
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts/">Blog</a></li>
+      
+    
+      
+        <li><a href="/contact">Contact</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2023-09-06-set-default-sound-ubuntu/">Setting the Default Sound Source and Sink on Ubuntu</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2023-09-06
+        
+      </span>
+    
+    
+    
+      <span class="post-reading-time">:: 2 min read (247 words)</span>
+    
+  </div>
+
+  
+  
+  <img src="/img/pulseaudio.png"
+    class="post-cover"
+    alt="Setting the Default Sound Source and Sink on Ubuntu"
+    title="Cover Image" />
+
+
+  
+
+  <div class="post-content"><div>
+        <p>If you&rsquo;re a modern office worker you probably do a lot of video calls and it&rsquo;s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn&rsquo;t do anything here, so you&rsquo;re at the mercy of randomness unless you have a script to set the default for you. Below is a script you can add to your startup applications which will set your default audio input and output for systems that use <a href="https://www.freedesktop.org/wiki/Software/PulseAudio/">PulseAudio</a> like Ubuntu and Debian. It should work on other systems with PulseAudio as well.</p>
+<p>To use the script, modify lines 9-10 and lines 15-16 with your default audio source and sink. To find out what they might be named, use <code>pactl list short sinks</code> and <code>pactl list short sources</code>. Then craft a search string for the grep statement to check if they are available and also enter the full name for lines 15 and 16.</p>
+
+
+  
+    <pre class="language-bash line-numbers"
+      ><code class="language-bash"
+      >#!/usr/bin/env bash
+
+sleep 5
+
+pactl=$(which pactl)
+if [[ -x &#34;$pactl&#34; ]]
+then
+  # Modify lines below for SOURCE and SINK check
+  SINK=`pactl list short sinks | grep SINK-STRING -c`
+  SOURCE=`pactl list short sources | grep SOURCE-STRING -c`
+  if [[ $SOURCE = 1 ]] &amp;&amp; [[ $SINK = 1 ]]
+  then
+    echo &#34;Setting Audio Source and Sink&#34;
+    # Modify lines below for full SOURCE and SINK name
+    pactl set-default-source FULL-SOURCE-STRING
+    pactl set-default-sink FULL-SINK_STRING
+  fi
+fi
+</code></pre>
+  
+
+
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

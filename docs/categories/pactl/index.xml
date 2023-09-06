@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pactl on Neutron Studio</title>
+    <link>/categories/pactl/</link>
+    <description>Recent content in pactl on Neutron Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/pactl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting the Default Sound Source and Sink on Ubuntu</title>
+      <link>/posts/2023-09-06-set-default-sound-ubuntu/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
+      
+      <guid>/posts/2023-09-06-set-default-sound-ubuntu/</guid>
+      <description>If you&amp;rsquo;re a modern office worker you probably do a lot of video calls and it&amp;rsquo;s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn&amp;rsquo;t do anything here, so you&amp;rsquo;re at the mercy of randomness unless you have a script to set the default for you.</description>
+      <content>&lt;p&gt;If you&amp;rsquo;re a modern office worker you probably do a lot of video calls and it&amp;rsquo;s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn&amp;rsquo;t do anything here, so you&amp;rsquo;re at the mercy of randomness unless you have a script to set the default for you. Below is a script you can add to your startup applications which will set your default audio input and output for systems that use &lt;a href=&#34;https://www.freedesktop.org/wiki/Software/PulseAudio/&#34;&gt;PulseAudio&lt;/a&gt; like Ubuntu and Debian. It should work on other systems with PulseAudio as well.&lt;/p&gt;
+&lt;p&gt;To use the script, modify lines 9-10 and lines 15-16 with your default audio source and sink. To find out what they might be named, use &lt;code&gt;pactl list short sinks&lt;/code&gt; and &lt;code&gt;pactl list short sources&lt;/code&gt;. Then craft a search string for the grep statement to check if they are available and also enter the full name for lines 15 and 16.&lt;/p&gt;
+
+
+  
+    &lt;pre class=&#34;language-bash line-numbers&#34;
+      &gt;&lt;code class=&#34;language-bash&#34;
+      &gt;#!/usr/bin/env bash
+
+sleep 5
+
+pactl=$(which pactl)
+if [[ -x &amp;#34;$pactl&amp;#34; ]]
+then
+  # Modify lines below for SOURCE and SINK check
+  SINK=`pactl list short sinks | grep SINK-STRING -c`
+  SOURCE=`pactl list short sources | grep SOURCE-STRING -c`
+  if [[ $SOURCE = 1 ]] &amp;amp;&amp;amp; [[ $SINK = 1 ]]
+  then
+    echo &amp;#34;Setting Audio Source and Sink&amp;#34;
+    # Modify lines below for full SOURCE and SINK name
+    pactl set-default-source FULL-SOURCE-STRING
+    pactl set-default-sink FULL-SINK_STRING
+  fi
+fi
+&lt;/code&gt;&lt;/pre&gt;
+  
+
+
+</content>
+    </item>
+    
+  </channel>
+</rss>
