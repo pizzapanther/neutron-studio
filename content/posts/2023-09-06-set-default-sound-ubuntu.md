@@ -29,7 +29,7 @@ then
     echo "Setting Audio Source and Sink"
     # Modify lines below for full SOURCE and SINK name
     pactl set-default-source FULL-SOURCE-STRING
-    pactl set-default-sink FULL-SINK_STRING
+    pactl set-default-sink FULL-SINK-STRING
   fi
 fi
 {{< /prismjs >}}
