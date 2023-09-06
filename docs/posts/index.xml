@@ -36,7 +36,7 @@ then
     echo &amp;#34;Setting Audio Source and Sink&amp;#34;
     # Modify lines below for full SOURCE and SINK name
     pactl set-default-source FULL-SOURCE-STRING
-    pactl set-default-sink FULL-SINK_STRING
+    pactl set-default-sink FULL-SINK-STRING
   fi
 fi
 &lt;/code&gt;&lt;/pre&gt;
