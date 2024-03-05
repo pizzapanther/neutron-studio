@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>A Better Template for Your Frontend on Fly.io :: Neutron Studio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A better way to serve static content on Fly.io" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="A Better Template for Your Frontend on Fly.io">
+<meta property="og:description" content="A better way to serve static content on Fly.io" />
+<meta property="og:url" content="/posts/2024-03-05-static-sites-on-fly/" />
+<meta property="og:site_name" content="Neutron Studio" />
+
+  <meta property="og:image" content="/img/server-monolith.jpg">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="fly.io" />
+
+  <meta property="article:section" content="frontend" />
+
+
+  <meta property="article:published_time" content="2024-02-04 06:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Neutron Studio
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts/">Blog</a></li>
+        
+      
+        
+          <li><a href="/contact">Contact</a></li>
+        
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts/">Blog</a></li>
+      
+    
+      
+        <li><a href="/contact">Contact</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2024-03-05-static-sites-on-fly/">A Better Template for Your Frontend on Fly.io</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2024-02-04
+        
+      </span>
+    
+    
+    
+      <span class="post-reading-time">:: 3 min read (587 words)</span>
+    
+  </div>
+
+  
+  
+  <img src="/img/server-monolith.jpg"
+    class="post-cover"
+    alt="A Better Template for Your Frontend on Fly.io"
+    title="Cover Image" />
+
+
+  
+
+  <div class="post-content"><div>
+        <p>While the <a href="https://fly.io/docs/languages-and-frameworks/static/">Fly docs</a> have a good example of serving a static frontend, it leaves many details out and misses some features you will probably want if you&rsquo;re deploying anything with a little complexity. This post goes over how you can improve this setup and make it a better developer experience using Fly.io for static frontends.</p>
+<h2 id="better-web-server">Better Web Server<a href="#better-web-server" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>While the web server documented is fast and simple, it hasn&rsquo;t been updated in ages and is missing some configuration options you will probably want. I found the <a href="https://static-web-server.net/">Static Web Server</a> that is written in Rust to be fast and simple, but additionally is being actively developed and contains more configuration features you will probably need. My example config is shown below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">general</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">port</span> = <span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">root</span> = <span style="color:#e6db74">&#34;/app/src/dist&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">page-fallback</span> = <span style="color:#e6db74">&#34;/app/src/dist/index.html&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">log-level</span> = <span style="color:#e6db74">&#34;info&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cache-control-headers</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">advanced</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">advanced</span>.<span style="color:#a6e22e">headers</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#34;**/*.html&#34;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">advanced</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">headers</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Cache-Control</span> = <span style="color:#e6db74">&#34;public, max-age=1800&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">advanced</span>.<span style="color:#a6e22e">headers</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#34;**/&#34;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">advanced</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">headers</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Cache-Control</span> = <span style="color:#e6db74">&#34;public, max-age=1800&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">advanced</span>.<span style="color:#a6e22e">headers</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#34;**/*.{jpg,jpeg,png,ico,gif,woff2,js,webmanifest,xml,css}&#34;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">advanced</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">headers</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Cache-Control</span> = <span style="color:#e6db74">&#34;public, max-age=86400&#34;</span>
+</span></span></code></pre></div><p>The first thing you&rsquo;ll notice is the <code>page-fallback</code> setting. This setting is useful if you&rsquo;re building a Single Page Application (SPA) with URL routes. While the goStatic server can also do this by serving a 404 page, this is incorrect because the browser receives a 404 status code which some browsers interpret as an error thus disrupting what is presented back to the user. Static Web Server properly handles the fallback and presents a 200 status code.</p>
+<h3 id="http-headers">HTTP Headers<a href="#http-headers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Next you&rsquo;ll notice you can control the HTTP headers with Static Web Server which you can not do so well with goStatic. In my example this allows me to set cache headers for my HTML routes to a shorter time since they are not unique per version deploy. For all other files which have unique compiled names by my bundler I set higher cache times so my server can cut down on bandwidth.</p>
+<h2 id="build-process">Build Process<a href="#build-process" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The Fly example also does not show an example build process so I built out an example build process below. If you have a static frontend with some kind of compilation step, you probably want Fly.io to run the build for you, so that you have better repeatable builds. Below is an example <code>Dockerfile</code> I use on one of my projects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> docker.io/bitnami/minideb:bookworm</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">USER</span><span style="color:#e6db74"> root</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> VERSION<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir -p /app<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> install_packages bash curl ca-certificates <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    curl -fsSL https://deb.nodesource.com/setup_20.x | bash - <span style="color:#f92672">&amp;&amp;</span> install_packages nodejs<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /app<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> bin/static-web-server /usr/bin<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> VERSION<span style="color:#f92672">=</span>$VERSION<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> sed -i -e <span style="color:#e6db74">&#34;s/dev/</span>$VERSION<span style="color:#e6db74">/g&#34;</span> src/version.js<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> npm install<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> npm run build<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> static-web-server --config-file /app/config.toml<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>A couple things to note in this build:</p>
+<ol>
+<li>I like using the <code>minideb</code> container to start from since it is a compact Debian distro that allows you to easily install Linux packages you might need. In this case we install Node 20 LTS.</li>
+<li>When running the build, you must supply a version build arg like: <code>fly deploy --build-arg VERSION=v1.0.1</code>. You could skip this but I wanted to include a version number in my frontend build. This method of using a search and replace with <code>sed</code> works best with Vite I found instead of using ENVs.</li>
+<li>You can see this build process is pretty standard otherwise with <code>npm install</code> and <code>npm run build</code>. So you can adapt those commands to whatever bundler you are using.</li>
+</ol>
+<h2 id="summing-it-up">Summing It Up<a href="#summing-it-up" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>By switching your static file server and adding a build pipeline on Fly.io you can improve your frontend deployment process and support extra features you might need.</p>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
