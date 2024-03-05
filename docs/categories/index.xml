@@ -6,9 +6,29 @@
     <description>Recent content in Categories on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Feb 2024 06:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>audio</title>
+      <title>Fly.io</title>
+      <link>/categories/fly.io/</link>
+      <pubDate>Sun, 04 Feb 2024 06:00:00 +0000</pubDate>
+      
+      <guid>/categories/fly.io/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Frontend</title>
+      <link>/categories/frontend/</link>
+      <pubDate>Sun, 04 Feb 2024 06:00:00 +0000</pubDate>
+      
+      <guid>/categories/frontend/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Audio</title>
       <link>/categories/audio/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
       
@@ -18,7 +38,7 @@
     </item>
     
     <item>
-      <title>bash</title>
+      <title>Bash</title>
       <link>/categories/bash/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
       
@@ -28,7 +48,7 @@
     </item>
     
     <item>
-      <title>pactl</title>
+      <title>Pactl</title>
       <link>/categories/pactl/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
       
@@ -38,7 +58,7 @@
     </item>
     
     <item>
-      <title>pulse audio</title>
+      <title>Pulse Audio</title>
       <link>/categories/pulse-audio/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 -0600</pubDate>
       
@@ -48,7 +68,7 @@
     </item>
     
     <item>
-      <title>cli</title>
+      <title>Cli</title>
       <link>/categories/cli/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
       
@@ -58,7 +78,7 @@
     </item>
     
     <item>
-      <title>command line</title>
+      <title>Command Line</title>
       <link>/categories/command-line/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
       
@@ -68,7 +88,7 @@
     </item>
     
     <item>
-      <title>terminal</title>
+      <title>Terminal</title>
       <link>/categories/terminal/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
       
@@ -78,7 +98,7 @@
     </item>
     
     <item>
-      <title>tmux</title>
+      <title>Tmux</title>
       <link>/categories/tmux/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
       
@@ -88,7 +108,7 @@
     </item>
     
     <item>
-      <title>development</title>
+      <title>Development</title>
       <link>/categories/development/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
       
@@ -98,7 +118,7 @@
     </item>
     
     <item>
-      <title>javascript</title>
+      <title>Javascript</title>
       <link>/categories/javascript/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
       
@@ -108,7 +128,7 @@
     </item>
     
     <item>
-      <title>parcel</title>
+      <title>Parcel</title>
       <link>/categories/parcel/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
       
@@ -118,7 +138,7 @@
     </item>
     
     <item>
-      <title>vue</title>
+      <title>Vue</title>
       <link>/categories/vue/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 -0600</pubDate>
       
@@ -128,7 +148,7 @@
     </item>
     
     <item>
-      <title>graphql</title>
+      <title>Graphql</title>
       <link>/categories/graphql/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 -0600</pubDate>
       
@@ -138,7 +158,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>/categories/python/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 -0600</pubDate>
       
@@ -148,7 +168,7 @@
     </item>
     
     <item>
-      <title>docker compose</title>
+      <title>Docker Compose</title>
       <link>/categories/docker-compose/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 -0600</pubDate>
       
@@ -168,7 +188,7 @@
     </item>
     
     <item>
-      <title>weather api</title>
+      <title>Weather Api</title>
       <link>/categories/weather-api/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
       
@@ -178,7 +198,7 @@
     </item>
     
     <item>
-      <title>weatherkit</title>
+      <title>Weatherkit</title>
       <link>/categories/weatherkit/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 -0600</pubDate>
       
@@ -188,7 +208,7 @@
     </item>
     
     <item>
-      <title>church</title>
+      <title>Church</title>
       <link>/categories/church/</link>
       <pubDate>Tue, 28 Dec 2021 20:00:00 -0600</pubDate>
       
@@ -198,7 +218,7 @@
     </item>
     
     <item>
-      <title>android</title>
+      <title>Android</title>
       <link>/categories/android/</link>
       <pubDate>Tue, 06 Jul 2021 20:00:00 -0600</pubDate>
       
@@ -208,7 +228,7 @@
     </item>
     
     <item>
-      <title>privacy</title>
+      <title>Privacy</title>
       <link>/categories/privacy/</link>
       <pubDate>Tue, 06 Jul 2021 20:00:00 -0600</pubDate>
       
@@ -218,7 +238,7 @@
     </item>
     
     <item>
-      <title>biking</title>
+      <title>Biking</title>
       <link>/categories/biking/</link>
       <pubDate>Mon, 10 May 2021 20:00:00 -0600</pubDate>
       
@@ -228,7 +248,7 @@
     </item>
     
     <item>
-      <title>tires</title>
+      <title>Tires</title>
       <link>/categories/tires/</link>
       <pubDate>Mon, 10 May 2021 20:00:00 -0600</pubDate>
       
@@ -238,7 +258,7 @@
     </item>
     
     <item>
-      <title>tech</title>
+      <title>Tech</title>
       <link>/categories/tech/</link>
       <pubDate>Fri, 02 Aug 2019 20:00:00 -0600</pubDate>
       
@@ -248,7 +268,7 @@
     </item>
     
     <item>
-      <title>voice</title>
+      <title>Voice</title>
       <link>/categories/voice/</link>
       <pubDate>Fri, 02 Aug 2019 20:00:00 -0600</pubDate>
       

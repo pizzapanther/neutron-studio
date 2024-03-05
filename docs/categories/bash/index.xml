@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bash on Neutron Studio</title>
+    <title>Bash on Neutron Studio</title>
     <link>/categories/bash/</link>
-    <description>Recent content in bash on Neutron Studio</description>
+    <description>Recent content in Bash on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 Sep 2023 00:00:00 -0600</lastBuildDate><atom:link href="/categories/bash/index.xml" rel="self" type="application/rss+xml" />
