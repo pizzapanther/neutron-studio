@@ -7,3 +7,4 @@ node_modules/
 __pypackages__/
 .jekyll-cache/
 _site/
+public/
