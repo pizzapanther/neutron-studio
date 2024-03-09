@@ -18,6 +18,14 @@ templates:
         type: datetime
       draft:
         type: boolean
+        default: false
+      narfable:
+        type: readonly
+        value: true
+      multi:
+        type: textarea
+      map:
+        type: yaml
   post:
     fields:
       title:
@@ -30,6 +38,7 @@ templates:
         type: datetime
       draft:
         type: boolean
+        default: false
       categories:
         type: list[text]
       cover:
