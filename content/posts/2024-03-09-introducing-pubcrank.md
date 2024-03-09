@@ -37,7 +37,7 @@ This is where I plan to charge for the PubCrank service since this will mean mai
 
 So try PubCrank today, to start cranking out your content! In case you missed the screenshot, this post was written with PubCrank.
 
-<iframe src="https://giphy.com/embed/v2xIous7mnEYg" width="480" height="349" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/newspaper-press-v2xIous7mnEYg">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/v2xIous7mnEYg" width="300" height="218" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/newspaper-press-v2xIous7mnEYg">via GIPHY</a></p>
 
 ## PubCrank Links
 
