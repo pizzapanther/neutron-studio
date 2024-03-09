@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Introducing PubCrank.com :: Neutron Studio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official launch of PubCrank.com, static site editor with rails for non-devs." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Introducing PubCrank.com">
+<meta property="og:description" content="Official launch of PubCrank.com, static site editor with rails for non-devs." />
+<meta property="og:url" content="/posts/2024-03-09-introducing-pubcrank/" />
+<meta property="og:site_name" content="Neutron Studio" />
+
+  <meta property="og:image" content="/img/pubcrank.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="PubCrank" />
+
+  <meta property="article:section" content="Release" />
+
+
+  <meta property="article:published_time" content="2024-03-09 06:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Neutron Studio
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts/">Blog</a></li>
+        
+      
+        
+          <li><a href="/contact">Contact</a></li>
+        
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts/">Blog</a></li>
+      
+    
+      
+        <li><a href="/contact">Contact</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2024-03-09-introducing-pubcrank/">Introducing PubCrank.com</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2024-03-09
+        
+      </span>
+    
+    
+    
+      <span class="post-reading-time">:: 3 min read (592 words)</span>
+    
+  </div>
+
+  
+  
+  <img src="/img/pubcrank.png"
+    class="post-cover"
+    alt="Introducing PubCrank.com"
+    title="Cover Image" />
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Today I&rsquo;m officially releasing <a href="https://www.pubcrank.com/">PubCrank.com</a>! PubCrank is CMS for static site generators that use Markdown to generate content. It lets a developer setup a static site with guards that can guide content creators and editors to develop content independently. It does this with a simple editor that is configurable with templates that define the fields which can be used for that particular type of content. See the screenshot of the editor below.</p>
+<p><img alt="PubCrank Screenshot" src="/img/pubcrank-editor.png"></p>
+<h2 id="why-another-cms">Why Another CMS?<a href="#why-another-cms" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I&rsquo;ve developed various Content Management Systems over the years, most notably, I was a founding engineer of <a href="https://culturemap.com/">CultureMap.com</a>. And for the most part these systems all work the same. They present various form fields which need to be filled in and usually have one big field for free-form content. It is then up to the developer to define these fields and take them to fill in an HTML template which is shown to visitors of your site.</p>
+<p>I&rsquo;ve also found over the years, that for most smaller organizations unless you have dedicated editors or writers, everyone says they want to help edit content, but usually it is left up to the developer. So instead of setting up a hard to maintain CMS, I have started to use static site generators like <a href="https://gohugo.io/">Hugo</a> with Markdown. This setup follows the same model as other CMS&rsquo;s with fields defined in the frontmatter and content as Markdown in the main body of the file.</p>
+<p>However, every once in a while, I get lucky and someone wants to help develop content. They are essentially locked out of helping without a CMS. Thus, the CMS for static sites was born. I&rsquo;ve found a few existing static site CMS tools but was not satisfied with the workflow and experience. So I developed <a href="https://www.pubcrank.com/">PubCrank.com</a> to fill this gap.</p>
+<h2 id="free-for-local-editing">Free for Local Editing<a href="#free-for-local-editing" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I wanted to build and deploy PubCrank as fast as possible with the most bare bones feature set so that I could start using it with several small sites that I maintain. Additionally, I would like to make some revenue selling it as a SaaS. By using the <a href="https://developer.chrome.com/docs/capabilities/web-apis/file-system-access">Native File System API</a> I was able to build the PubCrank Editor with only frontend technology and without the need for building something like an Electron app. So today&rsquo;s launch is that initial release.</p>
+<p>You can edit sites with PubCrank locally right in your browser. This will let you setup guards for your writers but still means they will probably need to use something like Git when they are done developing content. However, this is a great way for you to start setting up and using PubCrank as a developer.</p>
+<p>I&rsquo;ve decided to keep this local editing free forever as an on ramp for using PubCrank. If you&rsquo;re a developer and only ever need a nice editor experience than today&rsquo;s release is all you&rsquo;ll ever need.</p>
+<h2 id="future-in-the-cloud">Future in the Cloud<a href="#future-in-the-cloud" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>If, however, you would like an even easier experience for your writers, I plan to add future integrations with Github, Gitlab, etc. This will allow you to provide an editing experience without the need for use of Git locally. PubCrank will handle all the commits and pushes for your users.</p>
+<p>This is where I plan to charge for the PubCrank service since this will mean maintaining backend services unlike today&rsquo;s launch which is simply a frontend static file deployment.</p>
+<p>So try PubCrank today, to start cranking out your content! In case you missed the screenshot, this post was written with PubCrank.</p>
+<iframe src="https://giphy.com/embed/v2xIous7mnEYg" width="480" height="349" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/newspaper-press-v2xIous7mnEYg">via GIPHY</a></p>
+<h2 id="pubcrank-links">PubCrank Links<a href="#pubcrank-links" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>Try PubCrank today: <a href="https://www.pubcrank.com/">https://www.pubcrank.com/</a></li>
+<li><a href="https://github.com/pizzapanther/pubcrank-community/discussions">Discuss Features and Ideas</a></li>
+<li><a href="https://github.com/pizzapanther/pubcrank-community/issues">Report Issues</a></li>
+</ul>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
