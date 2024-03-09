@@ -31,7 +31,7 @@ I've decided to keep this local editing free forever as an on ramp for using Pub
 
 ## Future in the Cloud
 
-If, however, you would like an even easier experience for your writers, I plan to add future integrations with Github, Gitlab, etc. This will allow you to provide an editing experience without the need for use of Git locally. PubCrank will handle all the commits and pushes for your users.
+If, however, you would like an even easier experience for your writers, I plan to add future integrations with Github, Gitlab, etc. This will allow you to provide an editing experience without the need for Git locally. PubCrank will handle all the commits and pushes for your users.
 
 This is where I plan to charge for the PubCrank service since this will mean maintaining backend services unlike today's launch which is simply a frontend static file deployment.
 
