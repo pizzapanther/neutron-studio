@@ -3,7 +3,6 @@ template: post
 draft: false
 title: SQLite the New Hotness?! 🤔
 date: 2024-03-21T05:00:00.000Z
-narfable: true
 categories:
   - Backend
   - Database
