@@ -1,6 +1,6 @@
 ---
 template: talk
-draft: false
+draft: true
 title: The Joshua Generation
 date: 2024-03-16T05:00:00.000Z
 description: Bible study on doing new things for God.

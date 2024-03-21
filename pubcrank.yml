@@ -43,6 +43,8 @@ templates:
         type: list[text]
       cover:
         type: image
+      canonical_url:
+        type: text
   talk:
     fields:
       title:
