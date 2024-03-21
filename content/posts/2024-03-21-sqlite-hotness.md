@@ -1,7 +1,7 @@
 ---
 template: post
 draft: false
-title: SQLite All the New Hotness?!
+title: SQLite the New Hotness?! 🤔
 date: 2024-03-21T05:00:00.000Z
 narfable: true
 categories:
