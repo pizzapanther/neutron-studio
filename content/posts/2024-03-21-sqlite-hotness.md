@@ -8,6 +8,7 @@ categories:
   - Database
 description: A survey of why SQLite is trending up in many places.
 cover: /img/sqlite-so-hot.jpg
+canonical_url: https://hackernoon.com/sqlite-the-new-hotness
 ---
 SQLite is popping up in many places all the sudden as hot new tech. While it's nowhere near as hot as AI/ML right now, it is amazing that such an old technology is seeing a renaissance.
 

@@ -2,16 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2024-03-09T06:00:00+00:00</lastmod>
+    <loc>/categories/backend/</loc>
+    <lastmod>2024-03-21T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2024-03-09-introducing-pubcrank/</loc>
-    <lastmod>2024-03-09T06:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2024-03-21T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/database/</loc>
+    <lastmod>2024-03-21T05:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2024-03-09T06:00:00+00:00</lastmod>
+    <lastmod>2024-03-21T05:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2024-03-21T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2024-03-21-sqlite-hotness/</loc>
+    <lastmod>2024-03-21T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talks/</loc>
+    <lastmod>2024-03-16T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talks/2024-04-joshua-generation/</loc>
+    <lastmod>2024-03-16T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2024-03-09-introducing-pubcrank/</loc>
     <lastmod>2024-03-09T06:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/pubcrank/</loc>

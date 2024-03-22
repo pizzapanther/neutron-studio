@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backend on Neutron Studio</title>
+    <link>/categories/backend/</link>
+    <description>Recent content in Backend on Neutron Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Mar 2024 05:00:00 +0000</lastBuildDate><atom:link href="/categories/backend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLite the New Hotness?! 🤔</title>
+      <link>/posts/2024-03-21-sqlite-hotness/</link>
+      <pubDate>Thu, 21 Mar 2024 05:00:00 +0000</pubDate>
+      
+      <guid>/posts/2024-03-21-sqlite-hotness/</guid>
+      <description>SQLite is popping up in many places all the sudden as hot new tech. While it&amp;rsquo;s nowhere near as hot as AI/ML right now, it is amazing that such an old technology is seeing a renaissance.
+SQLite is a file based database that was initially released 23 years ago. I often tell other developers it is the fastest database but it just doesn&amp;rsquo;t scale off of one server. However, because it is a file, it&amp;rsquo;s extremely easy to use and also includes many advance features like full text search and GIS.</description>
+      <content>&lt;p&gt;SQLite is popping up in many places all the sudden as hot new tech. While it&amp;rsquo;s nowhere near as hot as AI/ML right now, it is amazing that such an old technology is seeing a renaissance.&lt;/p&gt;
+&lt;p&gt;SQLite is a file based database that was initially released 23 years ago. I often tell other developers it is the fastest database but it just doesn&amp;rsquo;t scale off of one server. However, because it is a file, it&amp;rsquo;s extremely easy to use and also includes many advance features like full text search and GIS. Because of its ease of use, it is used in many places behind the scenes such as web browsers, operating systems, embedded applications, and more.&lt;/p&gt;
+&lt;p&gt;So why is SQLite all the rave right now? Below I&amp;rsquo;ll outline some of the newest SQLite tech with a summary of why you might want to use it.&lt;/p&gt;
+&lt;h2 id=&#34;blockchain-powered-distributed-data&#34;&gt;Blockchain Powered Distributed Data&lt;/h2&gt;
+&lt;p&gt;SQLite has a few distributed implementations that the Bitcoin Bros would be proud of. The &lt;a href=&#34;https://raft.github.io/&#34;&gt;Raft protocol&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Paxos_(computer_science)&#34;&gt;Paxos protocol&lt;/a&gt; are consensus protocols which can be used in blockchain like use cases. In this case, they were implemented with SQLite to create a distributed database. This helps get SQLite off of one machine and onto to many. Because of its distributed nature, the trade off is you have slower write performance. However, you gain reliability and availability. So if you want to distribute your database to multiple machines try out one of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rqlite.io/&#34;&gt;rqlite&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sqlitecloud.io/&#34;&gt;SQLite Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bedrockdb.com/&#34;&gt;BedrockDB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;RQLite, SQLite, and BedrockDB are not a drop in replacement for SQLite in your application code. RQLite has an HTTP API which you can use and all have client libraries. The client libraries may be a drop in replacement for SQLite in your application code, but otherwise you will probably have to do a small lift to convert over to the appropriate client library. Additionally, Bedrock emulates MySQL. So if you can use MySQL in your application then you can also drop in BedrockDB.&lt;/p&gt;
+&lt;h2 id=&#34;primarily-more-fun-with-distributed-data&#34;&gt;Primarily More Fun with Distributed Data&lt;/h2&gt;
+&lt;p&gt;The second class of the distributed SQLite databases I&amp;rsquo;ve found on a high level do distributed read replicas and pass write operations to a &amp;ldquo;primary&amp;rdquo; server without use of blockchain algorithms. These implementations get you off of one machine with better write performance, in theory, than the Raft protocol implementations. Two popular implementations I found are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://fly.io/docs/litefs/&#34;&gt;LiteFS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://turso.tech/&#34;&gt;Turso&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;usage-1&#34;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;LiteFS as the name applies works more like a file system and is more a drop in replacement for your current SQLite application code. You will need to setup the replication mechanism but you will not need to change your application code. Turso requires the usage of &lt;a href=&#34;https://github.com/tursodatabase/libsql&#34;&gt;libSQL&lt;/a&gt; which while compatible with SQLite will require the usage of a new client library in your application code. So you will probably need some small tweaks to your application to get it working. Turso also offers an HTTP API.&lt;/p&gt;
+&lt;h2 id=&#34;durable-sqlite&#34;&gt;Durable SQLite&lt;/h2&gt;
+&lt;p&gt;There are several solutions that allow you to replicate your SQLite database. While these solutions don&amp;rsquo;t really get you off of one server unless your can configure your application for write operations to one server, they do allow you to persist your database and make it available for read replicas. You&amp;rsquo;ll want to use this method if you are trying to persist your data permanently off your server or you only need one server that does the write operations and many more that do reading. This may sound similar to the previous implementations, but differs because write operations are not transparently handled. It is up to you to solve this. This could be useful in storing structured data for a pipeline or for small applications that only need one server with a way to backup your database.&lt;/p&gt;
+&lt;p&gt;There are several options for this type of solution:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://litestream.io/&#34;&gt;LiteStream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/backtrace-labs/verneuil&#34;&gt;Verneuil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://litereplica.io/&#34;&gt;LiteReplica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;usage-2&#34;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;The good thing about this type of solution is that they are often drop in replacements for your application. You will need to setup the replication mechanism into your application but your application code will remain the same.&lt;/p&gt;
+&lt;h2 id=&#34;yes-theres-more&#34;&gt;Yes There&amp;rsquo;s More!&lt;/h2&gt;
+&lt;p&gt;Yes there are more SQLite implementations, but I found the ones I listed above more complete or easier to use right now. So keep an eye out on the SQLite space because it is moving fast.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
