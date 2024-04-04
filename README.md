@@ -8,5 +8,5 @@ hugo server -D
 ## Build
 
 ```
-hugo -D -d docs/
+hugo -d docs/
 ```
