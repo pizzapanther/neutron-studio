@@ -67,3 +67,9 @@ if (process.env.NODE_ENV !== 'production') {
 ```
 
 Have fun with your new Vue 3 app development and throw out your aspirin as you'll now be on easy street and have far fewer configuration errors. Parcel JS will handle most other setup, even installing the transformers you'll need to compile things like Vue Single File Components and Typescript.
+
+## Update 2024
+
+Just use Vite because Parcel JS almost always fails for me now. Unfortunately, it's no longer a viable option.
+
+Check out [this article](https://wildermuth.com/2021/01/10/Vite-for-Existing-Vue-CLI-Projects/) for a quick Vite setup.

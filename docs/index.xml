@@ -342,6 +342,9 @@ find plugin directory there and remove it.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;__VUE_PROD_DEVTOOLS__&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Have fun with your new Vue 3 app development and throw out your aspirin as you&amp;rsquo;ll now be on easy street and have far fewer configuration errors. Parcel JS will handle most other setup, even installing the transformers you&amp;rsquo;ll need to compile things like Vue Single File Components and Typescript.&lt;/p&gt;
+&lt;h2 id=&#34;update-2024&#34;&gt;Update 2024&lt;/h2&gt;
+&lt;p&gt;Just use Vite because Parcel JS almost always fails for me now. Unfortunately, it&amp;rsquo;s no longer a viable option.&lt;/p&gt;
+&lt;p&gt;Check out &lt;a href=&#34;https://wildermuth.com/2021/01/10/Vite-for-Existing-Vue-CLI-Projects/&#34;&gt;this article&lt;/a&gt; for a quick Vite setup.&lt;/p&gt;
 </content>
     </item>
     
