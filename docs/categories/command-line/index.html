@@ -12,9 +12,6 @@
 
 
 
-  
-
-
 
 
 <link rel="stylesheet" href="/assets/style.css">
@@ -160,9 +157,22 @@
       
         <div class="post-content">
           
-            I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn’t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.
-See the list of plugins on Github.
-Installation sudo apt install tmux-plugin-manager echo &quot;run '/usr/share/tmux-plugin-manager/tpm'&quot; &gt;&gt; ~/.tmux.conf # exit and start tmux again Installing plugins Add new plugin to ~/.
+            <p>I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn&rsquo;t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.</p>
+<p>See the <a href="https://github.com/tmux-plugins/list">list of plugins on Github</a>.</p>
+<h3 id="installation">Installation</h3>
+<pre tabindex="0"><code>sudo apt install tmux-plugin-manager
+<p>echo &quot;run '/usr/share/tmux-plugin-manager/tpm'&quot; &gt;&gt; ~/.tmux.conf</p>
+<h1 id="exit-and-start-tmux-again">exit and start tmux again</h1>
+<p></code></pre><h3 id="installing-plugins">Installing plugins</h3></p>
+<ol>
+<li>Add new plugin to <code>~/.tmux.conf</code> with <code>set -g @plugin '...'</code>
+<ul>
+<li>Example: <code>set -g @plugin 'tmux-plugins/tmux-yank'</code></li>
+</ul>
+</li>
+<li>Press <code>ctrl-b (or prefix)</code> + <kbd>I</kbd> (capital i, as in <strong>I</strong>nstall) to fetch the plugin.</li>
+</ol>
+<p>You&rsquo;re good to go! The plugin was cloned to <code>~/.tmux/plugins/</code> dir and sourced.</p>
           
         </div>
 

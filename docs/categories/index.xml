@@ -6,7 +6,27 @@
     <description>Recent content in Categories on Neutron Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Mar 2024 05:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Oct 2024 11:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>/categories/docker/</link>
+      <pubDate>Sat, 26 Oct 2024 11:00:00 +0000</pubDate>
+      
+      <guid>/categories/docker/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>DX</title>
+      <link>/categories/dx/</link>
+      <pubDate>Sat, 26 Oct 2024 11:00:00 +0000</pubDate>
+      
+      <guid>/categories/dx/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>Backend</title>
       <link>/categories/backend/</link>
@@ -213,16 +233,6 @@
       <pubDate>Sun, 15 Jan 2023 00:00:00 -0600</pubDate>
       
       <guid>/categories/docker-compose/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>DX</title>
-      <link>/categories/dx/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 -0600</pubDate>
-      
-      <guid>/categories/dx/</guid>
       <description></description>
       <content></content>
     </item>

@@ -13,9 +13,24 @@
       <pubDate>Mon, 14 Aug 2023 00:00:00 -0600</pubDate>
       
       <guid>/posts/2023-08-14-tmux-plugins-ubuntu/</guid>
-      <description>I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn&amp;rsquo;t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.
-See the list of plugins on Github.
-Installation sudo apt install tmux-plugin-manager echo &amp;#34;run &amp;#39;/usr/share/tmux-plugin-manager/tpm&amp;#39;&amp;#34; &amp;gt;&amp;gt; ~/.tmux.conf # exit and start tmux again Installing plugins Add new plugin to ~/.</description>
+      <description>&lt;p&gt;I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn&amp;rsquo;t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://github.com/tmux-plugins/list&#34;&gt;list of plugins on Github&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install tmux-plugin-manager
+
+echo &amp;#34;run &amp;#39;/usr/share/tmux-plugin-manager/tpm&amp;#39;&amp;#34; &amp;gt;&amp;gt; ~/.tmux.conf
+
+# exit and start tmux again
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;installing-plugins&#34;&gt;Installing plugins&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Add new plugin to &lt;code&gt;~/.tmux.conf&lt;/code&gt; with &lt;code&gt;set -g @plugin &#39;...&#39;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Example: &lt;code&gt;set -g @plugin &#39;tmux-plugins/tmux-yank&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;ctrl-b (or prefix)&lt;/code&gt; + &lt;kbd&gt;I&lt;/kbd&gt; (capital i, as in &lt;strong&gt;I&lt;/strong&gt;nstall) to fetch the plugin.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You&amp;rsquo;re good to go! The plugin was cloned to &lt;code&gt;~/.tmux/plugins/&lt;/code&gt; dir and sourced.&lt;/p&gt;</description>
       <content>&lt;p&gt;I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn&amp;rsquo;t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.&lt;/p&gt;
 &lt;p&gt;See the &lt;a href=&#34;https://github.com/tmux-plugins/list&#34;&gt;list of plugins on Github&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;

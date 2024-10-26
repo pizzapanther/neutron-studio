@@ -12,9 +12,6 @@
 
 
 
-  
-
-
 
 
 <link rel="stylesheet" href="/assets/style.css">
@@ -136,6 +133,41 @@
     
   
   <div class="posts">
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="/posts/2024-10-26-sync-user-ids/">Syncing User IDs in Your Dev Containers</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2024-10-26
+          </span>
+          
+        </div>
+
+        
+
+        
+  <img src="/posts/docker-city.jpg"
+    class="post-cover"
+    alt="Syncing User IDs in Your Dev Containers"
+    title="Cover Image" />
+
+
+      
+        <div class="post-content">
+          
+            How to sync user ids in docker so your files have the correct owner.
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/posts/2024-10-26-sync-user-ids/">Read more →</a>
+        </div>
+        
+      </div>
     
       <div class="post on-list">
         <h1 class="post-title">
@@ -265,7 +297,7 @@
       
         <div class="post-content">
           
-            If you’re a modern office worker you probably do a lot of video calls and it’s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn’t do anything here, so you’re at the mercy of randomness unless you have a script to set the default for you.
+            If you&rsquo;re a modern office worker you probably do a lot of video calls and it&rsquo;s really annoying when your default audio and video inputs and outputs change on rebooting your computer. Windows is actually pretty good at remembering your last choice and setting the appropriate defaults on reboot. However, Linux doesn&rsquo;t do anything here, so you&rsquo;re at the mercy of randomness unless you have a script to set the default for you. Below is a script you can add to your startup applications which will set your default audio input and output for systems that use <a href="https://www.freedesktop.org/wiki/Software/PulseAudio/">PulseAudio</a> like Ubuntu and Debian. It should work on other systems with PulseAudio as well.
           
         </div>
 
@@ -300,9 +332,22 @@
       
         <div class="post-content">
           
-            I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn’t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.
-See the list of plugins on Github.
-Installation sudo apt install tmux-plugin-manager echo &quot;run '/usr/share/tmux-plugin-manager/tpm'&quot; &gt;&gt; ~/.tmux.conf # exit and start tmux again Installing plugins Add new plugin to ~/.
+            <p>I learned about Tmux plugins this weekend and they are pretty awesome! However, I didn&rsquo;t find the correct instructions for setting them up quickly in Ubuntu. Most of the directions I found centered around installing manaully from Github. Below I listed the instructions for Ubuntu/Debian installation.</p>
+<p>See the <a href="https://github.com/tmux-plugins/list">list of plugins on Github</a>.</p>
+<h3 id="installation">Installation</h3>
+<pre tabindex="0"><code>sudo apt install tmux-plugin-manager
+<p>echo &quot;run '/usr/share/tmux-plugin-manager/tpm'&quot; &gt;&gt; ~/.tmux.conf</p>
+<h1 id="exit-and-start-tmux-again">exit and start tmux again</h1>
+<p></code></pre><h3 id="installing-plugins">Installing plugins</h3></p>
+<ol>
+<li>Add new plugin to <code>~/.tmux.conf</code> with <code>set -g @plugin '...'</code>
+<ul>
+<li>Example: <code>set -g @plugin 'tmux-plugins/tmux-yank'</code></li>
+</ul>
+</li>
+<li>Press <code>ctrl-b (or prefix)</code> + <kbd>I</kbd> (capital i, as in <strong>I</strong>nstall) to fetch the plugin.</li>
+</ol>
+<p>You&rsquo;re good to go! The plugin was cloned to <code>~/.tmux/plugins/</code> dir and sourced.</p>
           
         </div>
 
@@ -337,7 +382,7 @@ Installation sudo apt install tmux-plugin-manager echo &quot;run '/usr/share/tmu
       
         <div class="post-content">
           
-            While all the buzz lately is around the Javascript build tool Vite especially in the Vue.js community, I still prefer Parcel for building my Vue.js applications. However, getting started with Vue.js and Parcel is a little tricky because most tutorials and docs focus around Vite or other more popular build tools. This article documents how to setup Parcel to build a Vue.js project. But first why would even want to use Parcel?
+            While all the buzz lately is around the Javascript build tool <a href="https://vitejs.dev/">Vite</a> especially in the Vue.js community, I still prefer <a href="https://parceljs.org/">Parcel</a> for building my Vue.js applications. However, getting started with Vue.js and Parcel is a little tricky because most tutorials and docs focus around Vite or other more popular build tools. This article documents how to setup Parcel to build a Vue.js project. But first why would even want to use Parcel?
           
         </div>
 
@@ -372,7 +417,7 @@ Installation sudo apt install tmux-plugin-manager echo &quot;run '/usr/share/tmu
       
         <div class="post-content">
           
-            GraphQL is a newer way to create APIs that are very flexible and give users more control over how they use your API. However, with this extra control in your hands, it puts more effort on your part on how to call the GraphQL API. Unlike a REST API which you call and then receive a response determined by the API developer, with a GraphQL API, you have to develop queries to pull out information that is important to you.
+            GraphQL is a newer way to create APIs that are very flexible and give users more control over how they use your API. However, with this extra control in your hands, it puts more effort on your part on how to call the GraphQL API. Unlike a REST API which you call and then receive a response determined by the API developer, with a GraphQL API, you have to develop queries to pull out information that is important to you. In Python there are several client libraries that can help you call GraphQL APIs more easily.
           
         </div>
 
@@ -407,7 +452,7 @@ Installation sudo apt install tmux-plugin-manager echo &quot;run '/usr/share/tmu
       
         <div class="post-content">
           
-            Docker Compose is a great tool for development but I’ve never found a good example of how to use it for an ideal development workflow. Containers are immutable and thus by default are not an ideal development environment because development is fundamentally about changing things and then running the change. Most Docker Compose blogs talk about mounting your code repository as a volume which gets you around the immutability problem and mapping a port, but they don’t go much past that.
+            Docker Compose is a great tool for development but I&rsquo;ve never found a good example of how to use it for an ideal development workflow. Containers are immutable and thus by default are not an ideal development environment because development is fundamentally about changing things and then running the change. Most Docker Compose blogs talk about mounting your code repository as a volume which gets you around the immutability problem and mapping a port, but they don&rsquo;t go much past that. There are many more little tricks you can do to make your development experience better. Here I gathered all the tricks I&rsquo;ve used to make Docker Compose a great development workflow.
           
         </div>
 
@@ -438,8 +483,8 @@ Installation sudo apt install tmux-plugin-manager echo &quot;run '/usr/share/tmu
       
         <div class="post-content">
           
-            Apple bought out the Dark Sky weather company in 2020. They plan on shutting down the Darky Sky API and replacing it with the new WeatherKit service. The WeatherKit service is now in beta and can be used to retrieve weather forecasts and current conditions.
-The Dark Sky API was extremely easy to use and provided excellent weather data. The WeatherKit API functions much the same as the Dark Sky API, however, the authorization is very different and some what more difficult.
+            <p>Apple bought out the Dark Sky weather company in 2020. They plan on shutting down the Darky Sky API and replacing it with the new WeatherKit service. The WeatherKit service is now in beta and can be used to retrieve weather forecasts and current conditions.</p>
+<p>The Dark Sky API was extremely easy to use and provided excellent weather data. The WeatherKit API functions much the same as the Dark Sky API, however, the authorization is very different and some what more difficult. You still need to an API token like the previous API. However, now generating the token is more complex. Below is a gist that lays out how to use the API in Python with explanations of some aspects of the usage following.</p>
           
         </div>
 
@@ -447,42 +492,6 @@ The Dark Sky API was extremely easy to use and provided excellent weather data. 
         <div>
           <a class="read-more button"
             href="/posts/2022-08-09-weatherkit-python/">Read more →</a>
-        </div>
-        
-      </div>
-    
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="/posts/2021-12-28-streaming-setup/">Live Streaming Setup for Small/Medium Churches</a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-date">
-            2021-12-28
-          </span>
-          
-        </div>
-
-        
-
-        
-  <img src="/church/streaming.svg"
-    class="post-cover"
-    alt="Live Streaming Setup for Small/Medium Churches"
-    title="Cover Image" />
-
-
-      
-        <div class="post-content">
-          
-            With the pandemic live streaming services has become the default for church services. For smaller churches they may think that this tech may be out of reach because of things like cost and expertise. Thus, I’ve tried to come up with a cost effective way of live streaming that is easier to maintain. This blog post documents the streaming setup I’ve used at Church in the Wildwood.
-Rule 1: Do the Audio Well The first thing you want to do well is your audio.
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/posts/2021-12-28-streaming-setup/">Read more →</a>
         </div>
         
       </div>
