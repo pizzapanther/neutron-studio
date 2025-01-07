@@ -175,6 +175,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;streaming&#34;&gt;Streaming&lt;/h2&gt;
 &lt;p&gt;Sending data in chunks over a long lived HTTP connection&lt;/p&gt;
+&lt;iframe src=&#34;https://giphy.com/embed/vxXj8zguPhSgkZE8sw&#34; height=&#34;266&#34; style=&#34;&#34; frameBorder=&#34;0&#34; class=&#34;giphy-embed&#34; allowFullScreen&gt;&lt;/iframe&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;streaming-example&#34;&gt;Streaming Example&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;streaming_response&lt;/span&gt;():
@@ -242,6 +243,7 @@ data: {&amp;#34;username&amp;#34;: &amp;#34;bobby&amp;#34;, &amp;#34;time&amp;#3
 &lt;li&gt;&lt;a href=&#34;https://ably.com/&#34;&gt;Ably&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://soketi.app/&#34;&gt;Soketi&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;iframe src=&#34;https://giphy.com/embed/XQ982Xxy3rt20iOeJ7&#34; height=&#34;300&#34; style=&#34;&#34; frameBorder=&#34;0&#34; class=&#34;giphy-embed&#34; allowFullScreen&gt;&lt;/iframe&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;async-service-example&#34;&gt;Async Service Example&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wpoint &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; WeatherPoint(point&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;lat&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;lng&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, weather_data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data)

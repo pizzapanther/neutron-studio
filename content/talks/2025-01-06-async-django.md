@@ -150,6 +150,8 @@ class MySocket(WebSocketHandler):
 
 Sending data in chunks over a long lived HTTP connection
 
+<iframe src="https://giphy.com/embed/vxXj8zguPhSgkZE8sw" height="266" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
 ---
 
 ## Streaming Example
@@ -244,6 +246,8 @@ async def weather_stream(request, lat, lng):
 - [Pusher](https://pusher.com/)
 - [Ably](https://ably.com/)
 - [Soketi](https://soketi.app/)
+
+<iframe src="https://giphy.com/embed/XQ982Xxy3rt20iOeJ7" height="300" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ---
 
