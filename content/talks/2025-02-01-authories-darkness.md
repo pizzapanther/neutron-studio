@@ -59,17 +59,81 @@ Be cheerful no matter what; pray all the time; thank God no matter what happens.
 
 ## Scientism and Historicism
 
+- Scientism: philosophical notion which refuses to admit the validity of forms of knowledge other than those of the positive sciences
+- Historicism: truth is determined on the basis of its appropriateness to a certain period and a certain historical purpose
+
+---
+
+## Spritual Gifts and Scripture versus Scientism and Historicism
+
+Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. *2 Timothy 2:15*
+
+---
+
+## Spiritual Gifts
+
+But the manifestation of the Spirit is given to each one for the profit of all: for to one is given the word of wisdom through the Spirit, to another the word of knowledge through the same Spirit, to another faith by the same Spirit, to another gifts of healings by the same Spirit, to another the working of miracles, to another prophecy, to another discerning of spirits, to another different kinds of tongues, to another the interpretation of tongues. But one and the same Spirit works all these things, distributing to each one individually as He wills. *1 Corinthians 12:7-11 NKJV*
+
 ---
 
 ## Utilitarianism and Pragmatism
+
+- Utilitarianism: whatever brings the greatest happiness to the greatest number is the measure of what is good
+- Pragmatism: an attitude of mind which, in making its choices, precludes theoretical considerations or judgments based on ethical principles
+
+---
+
+## Evangelization & Daring vs Utilitarianism & Pragmatism
+
+Then the master said to the servant, ‘Go out into the highways and hedges, and compel them to come in, that my house may be filled. *Luke 14:23 NKJV*
+
+[Mark 6:7-12](https://www.biblegateway.com/passage/?search=Mark%206&version=NKJV#en-NKJV-24415)
+
+But God has chosen the foolish things of the world to put to shame the wise, and God has chosen the weak things of the world to put to shame the things which are mighty; *1 Corinthians 1:27*
 
 ---
 
 ## Progressivism and Utopianism
 
+- Progressivism: focus on advancing the public good is the ultimate goal, the new thing is always the right thing
+- Utopianism: human beings can reach ultimate society through their own perfection
+
+---
+
+## Tradition and Subsidiarity vs Progressivism and Utopianism
+
+Therefore, brethren, stand fast and hold the traditions which you were taught, whether by word or our epistle. *2 Thessalonians 2:15*
+
+Imitate me, just as I also imitate Christ. Now I praise you, brethren, that you remember me in all things and keep the traditions just as I delivered them to you. *1 Corinthians 11:1-2*
+
+---
+
+## Subsidiarity
+
+idea that initiatives should be taken and solutions should be implemented at the lowest local level possible
+
+---
+
+## Subsidiarity
+
+If anyone is poor among your fellow Israelites in any of the towns of the land the Lord your God is giving you, do not be hardhearted or tightfisted toward them. 8 Rather, be openhanded and freely lend them whatever they need. *Deuteronomy 15:7-8*
+
+If any believing man or woman has widows, let them relieve them, and do not let the church be burdened, that it may relieve those who are really widows. *1 Timothy 5:16 NKJV*
+
 ---
 
 ## Relativism and Indifferentism
+
+- Relativism: view that there is no such thing as truth
+- Indifferentism: idea that every religion is just a different expression of the same religion and that every religion is of equal value
+
+---
+
+## Truth & Authority vs Relativism & Indifferentism
+
+Know the Truth and Act in Authority
+
+[Matthew 7:24-27](https://www.biblegateway.com/passage/?search=matthew%207%3A24-27&version=NKJV)
 
 ---
 
