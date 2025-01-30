@@ -189,6 +189,14 @@ Give to the one who asks you, and do not turn away from the one who wants to bor
 
 ## Eroticism and Freudianism
 
+- eroticism: putting sexual pleasure as a core value of your being
+- freudianism: Sex is a fact of life. It’s no big deal. Get over it
+
 ---
 
-## NARFism
+## Marriage & Chastity vs Eroticism & Freudianism
+
+- Marriage is honorable among all, and the bed undefiled; but fornicators and adulterers God will judge. *Hebrews 13:4 NKJV*
+- [Matthew 19:4-6](https://www.biblegateway.com/passage/?search=Matthew+19:4-6&version=NKJV)
+- [1 Corinthians 20 7:2-11](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A2-11&version=NKJV)
+- [1 Corinthians 6:18-20](https://www.biblegateway.com/passage/?search=1+Corinthians+6:18-20&version=NKJV)
