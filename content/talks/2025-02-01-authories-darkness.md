@@ -135,13 +135,55 @@ Know the Truth and Act in Authority
 
 [Matthew 7:24-27](https://www.biblegateway.com/passage/?search=matthew%207%3A24-27&version=NKJV)
 
+[Matthew 16:15-19](https://www.biblegateway.com/passage/?search=Matthew+16%3A15-19&version=NKJV)
+
 ---
 
 ## Individualism and Tribalism
 
+- Individualism: there is nothing other than me, myself, and I
+  - not to be confused with being entrepreneurial, and independent spirit
+- Tribalism: there is nothing other than my group
+
+---
+
+## Obedience & Family of God vs Individualism & Tribalism
+
+- [Disciple's Prayer](https://www.biblegateway.com/passage/?search=Matthew+6:9-13&version=NKJV)
+- But this is what I commanded them, saying, ‘Obey My voice, and I will be your God, and you shall be My people. And walk in all the ways that I have commanded you, that it may be well with you. Jeremiah 7:23
+
+---
+
+## Obedience & Family of God
+
+- And let us consider one another in order to stir up love and good works, not forsaking the assembling of ourselves together, as is the manner of some, but exhorting one another, and so much the more as you see the Day approaching. *Hebrews 10:24-25 NKJV*
+- For all have sinned, and come short of the glory of God; *Romans 3:23 NKJV*
+- But God demonstrates His own love toward us, in that while we were still sinners, Christ died for us. *Romans 5:8 NKJV*
+
 ---
 
 ## Sentimentalism and Romanticism
+
+- sentimentalism: decision-making or taking an action based only on one’s emotions
+- romanticism: rejection of the precepts of order, calm, harmony, balance, idealization, and rationality. emphasizes the individual, the subjective, the irrational, the imaginative, the personal, the spontaneous, the emotional, the visionary, and the transcendental
+
+---
+
+## Education & Charity vs Sentimentalism & Romanticism
+
+This Book of the Law shall not depart from your mouth, but you shall meditate in it day and night, that you may observe to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success. *Joshua 1:8 NKJV*
+
+The fear of the Lord is the beginning of wisdom, And the knowledge of the Holy One is understanding. *Proverbs 9:10 NKJV*
+
+---
+
+## Education & Charity
+
+[Proverbs 4](https://www.biblegateway.com/passage/?search=Proverbs%204&version=NIV)
+
+Do not neglect to do good and to share what you have, for such sacrifices are pleasing to God. *Hebrews 13:16 NKJV*
+
+Give to the one who asks you, and do not turn away from the one who wants to borrow from you. *Matthew 5:42*
 
 ---
 
