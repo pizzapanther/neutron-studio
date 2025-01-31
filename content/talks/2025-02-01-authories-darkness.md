@@ -1,12 +1,12 @@
 ---
 template: talk
 draft: false
-title: Wrestling Authories of Darkness
+title: Battling Authories of Darkness
 date: 2025-01-28T05:00:00.000Z
 description: Bible study on the book Beheading Hydra
 layout: talk
 ---
-## Wrestling Authories of Darkness
+## Battling Authories of Darkness
 
 Paul Bailey<br>
 [neutron.studio/talks/](https://www.neutron.studio/talks/)
@@ -53,7 +53,7 @@ For the love of money is a root of all kinds of evil, for which some have straye
 
 But seek first the kingdom of God and His righteousness, and all these things shall be added to you. *Matthew 6:33 NKJV*
 
-Be cheerful no matter what; pray all the time; thank God no matter what happens. This is the way God wants you who belong to Christ Jesus to live. *1 Thessalonians 5:16-18*
+Be cheerful no matter what; pray all the time; thank God no matter what happens. This is the way God wants you who belong to Christ Jesus to live. *1 Thessalonians 5:16-18 MSG*
 
 ---
 
@@ -66,7 +66,7 @@ Be cheerful no matter what; pray all the time; thank God no matter what happens.
 
 ## Spritual Gifts and Scripture versus Scientism and Historicism
 
-Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. *2 Timothy 2:15*
+Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. *2 Timothy 2:15 KJV*
 
 ---
 
@@ -119,6 +119,16 @@ idea that initiatives should be taken and solutions should be implemented at the
 If anyone is poor among your fellow Israelites in any of the towns of the land the Lord your God is giving you, do not be hardhearted or tightfisted toward them. 8 Rather, be openhanded and freely lend them whatever they need. *Deuteronomy 15:7-8*
 
 If any believing man or woman has widows, let them relieve them, and do not let the church be burdened, that it may relieve those who are really widows. *1 Timothy 5:16 NKJV*
+
+---
+
+# Part 2: Battling Authories of Darkness
+
+---
+
+## Beheading Hydra
+
+![Beheading Hydra](/talks/hydra.jpg)
 
 ---
 
