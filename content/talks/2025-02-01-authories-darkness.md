@@ -15,7 +15,9 @@ Paul Bailey<br>
 
 ## Beheading Hydra
 
-![Beheading Hydra](/talks/hydra.jpg)
+<img src="/talks/hydra.jpg" alt="Beheading Hydra" style="height: 400px">
+
+16 core assumptions of the modern world and how to battle them
 
 ---
 
@@ -128,7 +130,9 @@ If any believing man or woman has widows, let them relieve them, and do not let 
 
 ## Beheading Hydra
 
-![Beheading Hydra](/talks/hydra.jpg)
+<img src="/talks/hydra.jpg" alt="Beheading Hydra" style="height: 400px">
+
+16 core assumptions of the modern world and how to battle them
 
 ---
 
