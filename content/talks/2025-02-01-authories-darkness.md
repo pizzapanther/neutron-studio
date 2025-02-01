@@ -40,6 +40,7 @@ Paul Bailey<br>
 ## Giving and Prayer vs Materialism and Atheism
 
 - Our money and our time are manifestations of the this world. When we give them to God we declare who our real master is by our actions
+- For where your treasure is, there your heart will be also. *Matthew 6:21 NKJV*
 
 ---
 
