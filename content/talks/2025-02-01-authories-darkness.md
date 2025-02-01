@@ -37,13 +37,13 @@ Paul Bailey<br>
 
 ---
 
-## Giving and Prayer+ vs Materialism and Atheism
+## Giving and Prayer vs Materialism and Atheism
 
 - Our money and our time are manifestations of the this world. When we give them to God we declare who our real master is by our actions
 
 ---
 
-## Giving and Prayer+
+## Giving and Prayer
 
 No one can serve two masters. Either you will hate the one and love the other, or you will be devoted to the one and despise the other. You cannot serve both God and money. *Matthew 6:24 NIV*
 
@@ -51,7 +51,7 @@ For the love of money is a root of all kinds of evil, for which some have straye
 
 ---
 
-## Giving and Prayer+
+## Giving and Prayer
 
 But seek first the kingdom of God and His righteousness, and all these things shall be added to you. *Matthew 6:33 NKJV*
 
