@@ -164,7 +164,6 @@ Know the Truth and Act in Authority
 
 ## Obedience & Family of God vs Individualism & Tribalism
 
-- [Disciple's Prayer](https://www.biblegateway.com/passage/?search=Matthew+6:9-13&version=NKJV)
 - But this is what I commanded them, saying, ‘Obey My voice, and I will be your God, and you shall be My people. And walk in all the ways that I have commanded you, that it may be well with you. Jeremiah 7:23
 
 ---
