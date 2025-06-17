@@ -1,6 +1,6 @@
 {
   title: Blog
-  description: Neutron Studio tech blog
+  description: Neutron Studio Tech Blog
   template: blog.html
   paginate: {
     listdir: .
@@ -9,6 +9,4 @@
   }
 }
 
-## Blog Details
-
-This is my awesome blog?
+## Neutron Studio Blog
