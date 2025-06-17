@@ -1,11 +1,11 @@
----
-template: talk
-draft: false
-title: Async Patterns in Django
-date: 2025-01-06T05:00:00.000Z
-description: Recipes for asynchronous coding in Django
-layout: talk
----
+{
+  draft: false
+  title: Async Patterns in Django
+  date: 2025-01-06T05:00:00.000Z
+  description: Recipes for asynchronous coding in Django
+  template: talk.html
+}
+
 ## Async Patterns in Django
 
 Paul Bailey

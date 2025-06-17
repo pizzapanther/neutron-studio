@@ -1,11 +1,11 @@
----
-template: talk
-draft: false
-title: Battling Authories of Darkness
-date: 2025-01-28T05:00:00.000Z
-description: Bible study on the book Beheading Hydra
-layout: talk
----
+{
+  draft: false
+  title: Battling Authories of Darkness
+  date: 2025-01-28T05:00:00.000Z
+  description: Bible study on the book Beheading Hydra
+  template: talk.html
+}
+
 ## Battling Authories of Darkness
 
 Paul Bailey<br>
