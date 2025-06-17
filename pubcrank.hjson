@@ -1,0 +1,12 @@
+{
+  site: {
+    name: Neutron Studio
+    nav: [
+      {name: "Home", url: "/"}
+      {name: "Blog", url: "/blog/"}
+      {name: "Contact", url: "/contact.html"}
+      {name: "Talks", url: "/talks/"}
+    ]
+  }
+  theme: "terminal"
+}
