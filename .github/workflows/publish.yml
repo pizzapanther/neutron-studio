@@ -1,0 +1,20 @@
+name: 🐱 Publish Site
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build Site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pipx
+        run: python3 -m pip install pipx
+      - name: Install Pubcrank
+        run: pipx install pubcrank-cli
+      - name: Build site
+        run: pubcrank build

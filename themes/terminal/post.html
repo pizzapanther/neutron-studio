@@ -1,0 +1,35 @@
+{% extends "terminal/base.html" %}
+{% block content %}
+<div class="post post-single">
+  <div class="post on-list">
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+    <div class="post-meta">
+      <span class="post-date">
+        Published: {{ page.date|date:"Y-m-d" }}
+      </span>
+    </div>
+
+    {% comment %}
+    {{ if .Params.tags }}
+      <span class="post-tags">
+        {{ range .Params.tags }}
+        #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+          {{- . -}}
+        </a>&nbsp;
+        {{ end }}
+      </span>
+    {{ end }}
+    {% endcomment %}
+
+    {% if page.cover %}
+    <img src="{{ page.cover }}" class="post-cover" alt="{{ page.title }}"/>
+    {% endif %}
+
+    <div class="post-content">
+      {{ page.body|safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,11 +1,11 @@
----
-template: talk
-draft: false
-title: The Joshua Pattern
-date: 2024-03-16T05:00:00.000Z
-description: Bible study on doing new things for God.
-layout: talk
----
+{
+  draft: false
+  title: The Joshua Pattern
+  date: 2024-03-16T05:00:00.000Z
+  description: Bible study on doing new things for God.
+  template: talk.html
+}
+
 ## The Joshua Pattern
 
 Paul Bailey<br>

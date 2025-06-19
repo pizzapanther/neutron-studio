@@ -1,7 +1,6 @@
----
-title: Contact
-readingTime: false
----
+{
+  title: Contact
+}
 
 ### Contact us via [E-Mail](mailto:inquiry@neutron.studio)
 

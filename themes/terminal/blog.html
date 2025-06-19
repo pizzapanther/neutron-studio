@@ -1,0 +1,46 @@
+{% extends "terminal/base.html" %}{% load pubcrank %}
+{% block content %}
+<div class="index-content">
+  {{ page.body|safe }}
+</div>
+<div class="posts">
+  {% for obj in pagination.object_list %}
+    <div class="post on-list">
+      <h1 class="post-title">
+        <a href="{% page_url obj %}">{{ obj.metadata.title }}</a>
+      </h1>
+      <div class="post-meta">
+        <span class="post-date">
+          Published: {{ obj.metadata.date|date:"Y-m-d" }}
+        </span>
+      </div>
+
+      {% comment %}
+      {{ if .Params.tags }}
+        <span class="post-tags">
+          {{ range .Params.tags }}
+          #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+            {{- . -}}
+          </a>&nbsp;
+          {{ end }}
+        </span>
+      {{ end }}
+      {% endcomment %}
+
+      {% if obj.metadata.cover %}
+      <img src="{{ obj.metadata.cover }}" class="post-cover" alt="{{ obj.metadata.title }}"/>
+      {% endif %}
+
+      <div class="post-content">
+        {{ obj.metadate.description }}
+      </div>
+
+      <div>
+        <a class="read-more button"
+          href="{% page_url obj %}">Read More →</a>
+      </div>
+    </div>
+  {% endfor %}
+  {% include "terminal/_pagination.html" %}
+</div>
+{% endblock %}
