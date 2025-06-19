@@ -13,9 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Pubcrank
-        uses: threeal/pipx-install-action
+      - uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: pubcrank-cli
+          packages: pipx
+          version: 1.0
+      - name: Install Pipx
+        run: pipx install pubcrank-cli
       - name: Build site
         run: pubcrank build
