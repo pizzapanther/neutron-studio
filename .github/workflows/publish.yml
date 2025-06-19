@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Pubcrank
-        uses: threeal/pipx-install-action@v2.0.0
+        uses: threeal/pipx-install-action
         with:
           packages: pubcrank-cli
       - name: Build site
