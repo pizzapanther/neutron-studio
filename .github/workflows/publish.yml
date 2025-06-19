@@ -11,6 +11,9 @@ jobs:
   build:
     name: Build Site
     runs-on: ubuntu-latest
+    environment:
+      name: Neutron Studio
+      url: https://www.neutron.studio/
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
