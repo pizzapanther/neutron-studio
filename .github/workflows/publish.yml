@@ -1,12 +1,8 @@
-name: 🚀 Publish Site
+name: 🐱 Publish Site
 on:
   push:
-    branches-ignore:
+    branches:
       - main
-# on:
-#   push:
-#     branches:
-#       - main
 jobs:
   build:
     name: Build Site
