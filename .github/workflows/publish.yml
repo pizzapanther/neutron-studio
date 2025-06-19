@@ -16,11 +16,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: pipx
-          version: 1.0
-      - name: Install Pipx
+      - name: Install pipx
+        run: python3 -m pip install pipx
+      - name: Install Pubcrank
         run: pipx install pubcrank-cli
       - name: Build site
         run: pubcrank build
