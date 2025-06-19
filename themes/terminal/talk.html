@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Description }}">
-
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
     <link rel="stylesheet" href="/reveal/dist/reset.css">
     <link rel="stylesheet" href="/reveal/dist/reveal.css">
     <link rel="stylesheet" href="/reveal/dist/theme/black.css">
@@ -19,7 +17,7 @@
     <div class="reveal">
       <div class="slides">
 <section data-markdown>
-<textarea data-template>{{ .RawContent }}</textarea>
+<textarea data-template>{{ page.body_raw }}</textarea>
 </section>
       </div>
     </div>
