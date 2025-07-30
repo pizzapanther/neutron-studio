@@ -93,6 +93,36 @@
   <div class="projects">
     <div class="v-card v-sheet theme--light">
       <div class="v-card__title">
+        <i
+          aria-hidden="true"
+          class="mdi mdi-radio-tower block"
+        ></i>
+        <h3>Godcaster</h3>
+        <h4>faith-based radio and podcasts</h4>
+      </div>
+      <div class="v-card__text">
+        Discover a world of faith-filled audio — all in one beautifully simple app.
+        Godcaster brings together your favorite Christian radio stations, live streams,
+        and on-demand podcasts.
+      </div>
+      <div class="v-card__actions">
+        <a
+          href="https://godcaster.fm/"
+          target="_blank"
+          class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary"
+        >
+          <span class="v-btn__content">
+            Learn More
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-open-in-new theme--light"
+            ></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="v-card v-sheet theme--light">
+      <div class="v-card__title">
         <i aria-hidden="true" class="mdi mdi-cog-outline block"></i>
         <h3>PubCrank</h3>
         <h4>A CMS for your MarkDown based static site</h4>
@@ -137,35 +167,6 @@
         >
           <span class="v-btn__content">
             Open App
-            <i
-              aria-hidden="true"
-              class="v-icon notranslate mdi mdi-open-in-new theme--light"
-            ></i>
-          </span>
-        </a>
-      </div>
-    </div>
-    <div class="v-card v-sheet theme--light">
-      <div class="v-card__title">
-        <i
-          aria-hidden="true"
-          class="mdi mdi-source-repository block"
-        ></i>
-        <h3>Neutron Sync</h3>
-        <h4>Sync your dotfiles with an encrypted Git repo</h4>
-      </div>
-      <div class="v-card__text">
-        Neutron Sync is a small command line utility to sync dotfiles
-        across machines via an encrypted Git repo.
-      </div>
-      <div class="v-card__actions">
-        <a
-          href="https://github.com/neutron-sync/neutron-sync"
-          target="_blank"
-          class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary"
-        >
-          <span class="v-btn__content">
-            View Docs
             <i
               aria-hidden="true"
               class="v-icon notranslate mdi mdi-open-in-new theme--light"
