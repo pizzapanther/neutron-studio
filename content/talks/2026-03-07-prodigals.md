@@ -63,6 +63,7 @@ Book: https://a.co/d/09yuoL6M
 
 *"When the house is filled with the Father's love the Prodigals will come home"*
 
+- Husbands, love your wives ..., [Colossians 3:19](https://biblehub.com/colossians/3-19.htm)
 - Have you forgiven your prodigals?
   - [Luke 17:4](https://biblehub.com/luke/17-4.htm)
 - The church and our households must have the love of the Father
