@@ -11,6 +11,20 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="/reveal/plugin/highlight/monokai.css">
+    <style>
+      @media print {
+        :root {
+          --r-background-color: #fff;
+          --r-main-color: #000;
+          --r-heading-color: #000;
+        }
+
+        .slide-background {
+          background-color: #fff !important;
+          -webkit-print-color-adjust: exact;
+        }
+      }
+    </style>
     <base target="_blank">
   </head>
   <body>
