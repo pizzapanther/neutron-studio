@@ -52,7 +52,6 @@ Book: https://a.co/d/09yuoL6M
 
 - Do we judge too harshly or unfairly
   - [Matthew 7:3-5](https://biblehub.com/nlt/matthew/7.htm)
-  - [1 Corinthians 10:23](https://biblehub.com/1_corinthians/10-23.htm)
 - Are you ashamed of your kids?
 - What is their heart?
   - are they really that far from God?
