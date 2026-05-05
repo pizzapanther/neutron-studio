@@ -126,3 +126,7 @@ With all the evidence that supports God and the Bible, you either have to be ign
   - https://www.amazon.com/Case-Christ-Journalists-Personal-Investigation/dp/0310209307
 - Jesus on Trial
   - https://www.amazon.com/Jesus-Trial-Lawyer-Affirms-Gospel/dp/1621574113
+
+---
+
+<iframe src="https://giphy.com/embed/9V1F9o1pBjsxFzHzBr" width="480" height="322" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
