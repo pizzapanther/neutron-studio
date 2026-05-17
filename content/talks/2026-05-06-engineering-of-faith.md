@@ -23,6 +23,10 @@ Paul Bailey<br>
 - The Bible is God's inspired word
   - must be historically accurate and not based on a foundation of lies
 
+---
+
+## Levels of Faith
+
 *2 Timothy 3:16 - All Scripture is inspired by God and is useful to teach us what is true and to make us realize what is wrong in our lives. It corrects us when we are wrong and teaches us to do what is right.*
 
 ---
