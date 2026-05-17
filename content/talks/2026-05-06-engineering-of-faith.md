@@ -19,6 +19,7 @@ Paul Bailey<br>
 
 - The Bible is conceptually true
   - a set of myths that describe some foundational truths
+  - 2 Timothy 3:5 *having a form of godliness but denying its power. And from such people turn away!*
 - The Bible is God's inspired word
   - must be historically accurate and not based on a foundation of lies
 
