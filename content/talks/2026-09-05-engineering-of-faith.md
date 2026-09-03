@@ -1,7 +1,7 @@
 {
   draft: false
   title: The Engineering of Faith
-  date: 2026-05-06T05:00:00.000Z
+  date: 2026-09-03T05:00:00.000Z
   description: survey of evidence that supports God and the Bible
   template: talk.html
 }
