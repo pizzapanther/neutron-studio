@@ -15,6 +15,10 @@ Paul Bailey<br>
 
 ---
 
+## "It takes more faith to be an atheist than to believe in God" Ruth Bell Graham
+
+---
+
 ## Levels of Faith
 
 - The Bible is conceptually true
